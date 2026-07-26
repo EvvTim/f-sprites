@@ -78,13 +78,17 @@ export function Filters({
   const inputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleUserScroll = () => {
       if (document.activeElement === inputRef.current) {
         inputRef.current?.blur()
       }
     }
-    window.addEventListener("scroll", handleScroll, { passive: true })
-    return () => window.removeEventListener("scroll", handleScroll)
+    window.addEventListener("touchmove", handleUserScroll, { passive: true })
+    window.addEventListener("wheel", handleUserScroll, { passive: true })
+    return () => {
+      window.removeEventListener("touchmove", handleUserScroll)
+      window.removeEventListener("wheel", handleUserScroll)
+    }
   }, [])
 
   const activeCount =
