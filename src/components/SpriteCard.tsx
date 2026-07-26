@@ -66,7 +66,7 @@ export function SpriteCard({
         aria-pressed={owned}
         aria-label={owned ? "Mark as not owned" : "Mark as owned"}
         className={cn(
-          "absolute top-1.5 right-1.5 flex size-8 items-center justify-center rounded-full border-2 transition-all active:scale-90",
+          "absolute top-1 right-1 flex size-9 items-center justify-center rounded-full border-2 transition-all active:scale-90",
           owned
             ? "border-emerald-600 bg-emerald-500 text-white shadow-sm"
             : "border-border/80 bg-background/90 text-transparent backdrop-blur-sm hover:border-foreground/30 hover:text-muted-foreground/60"

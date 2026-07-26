@@ -136,9 +136,12 @@ export function App() {
               It will be marked as not owned.
             </AlertDialogDescription>
           </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
+          <AlertDialogFooter className="gap-3">
+            <AlertDialogCancel className="h-11 text-base">
+              Cancel
+            </AlertDialogCancel>
             <AlertDialogAction
+              className="h-11 text-base"
               onClick={() => {
                 if (pendingRemove) toggleOwned(pendingRemove.id)
                 setPendingRemove(null)

@@ -49,7 +49,7 @@ function Chip({
       type="button"
       onClick={onClick}
       className={cn(
-        "shrink-0 rounded-full border px-3 py-1.5 text-xs font-medium whitespace-nowrap transition-colors",
+        "flex min-h-9 shrink-0 items-center rounded-full border px-3.5 py-2 text-xs font-medium whitespace-nowrap transition-colors active:scale-95",
         active
           ? "border-transparent bg-primary text-primary-foreground"
           : "border-border bg-background text-muted-foreground hover:text-foreground"
@@ -122,7 +122,7 @@ export function Filters({
             type="button"
             onClick={() => onQueryChange("")}
             aria-label="Clear search"
-            className="absolute top-1/2 right-3 flex size-4 -translate-y-1/2 items-center justify-center text-muted-foreground hover:text-foreground"
+            className="absolute top-1/2 right-1 flex size-8 -translate-y-1/2 items-center justify-center text-muted-foreground active:scale-90 hover:text-foreground"
           >
             <XIcon className="size-4" />
           </button>
@@ -134,7 +134,7 @@ export function Filters({
           type="button"
           variant={activeCount > 0 ? "default" : "outline"}
           size="icon-lg"
-          className="relative shrink-0 rounded-full"
+          className="relative size-11 shrink-0 rounded-full"
           onClick={() => setOpen(true)}
           aria-label="Filters"
         >
@@ -159,7 +159,7 @@ export function Filters({
               <p className="text-xs font-medium text-muted-foreground">
                 Rarity
               </p>
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-wrap gap-2">
                 <Chip
                   active={rarity === "all"}
                   onClick={() => onRarityChange("all")}
@@ -182,7 +182,7 @@ export function Filters({
               <p className="text-xs font-medium text-muted-foreground">
                 Variant
               </p>
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-wrap gap-2">
                 <Chip
                   active={variant === "all"}
                   onClick={() => onVariantChange("all")}
@@ -201,10 +201,14 @@ export function Filters({
               </div>
             </div>
 
-            <div className="flex flex-col gap-3 border-t border-border pt-3">
-              <label className="flex items-center justify-between text-sm">
+            <div className="flex flex-col divide-y divide-border border-t border-border">
+              <label
+                htmlFor="filter-only-owned"
+                className="flex min-h-11 cursor-pointer items-center justify-between py-2 text-sm active:bg-muted/50"
+              >
                 Only owned
                 <Switch
+                  id="filter-only-owned"
                   checked={onlyOwned}
                   onCheckedChange={(checked) => {
                     onOnlyOwnedChange(checked)
@@ -212,9 +216,13 @@ export function Filters({
                   }}
                 />
               </label>
-              <label className="flex items-center justify-between text-sm">
+              <label
+                htmlFor="filter-only-missing"
+                className="flex min-h-11 cursor-pointer items-center justify-between py-2 text-sm active:bg-muted/50"
+              >
                 Only missing
                 <Switch
+                  id="filter-only-missing"
                   checked={onlyMissing}
                   onCheckedChange={(checked) => {
                     onOnlyMissingChange(checked)
@@ -222,9 +230,13 @@ export function Filters({
                   }}
                 />
               </label>
-              <label className="flex items-center justify-between text-sm">
+              <label
+                htmlFor="filter-show-unreleased"
+                className="flex min-h-11 cursor-pointer items-center justify-between py-2 text-sm active:bg-muted/50"
+              >
                 Show unreleased
                 <Switch
+                  id="filter-show-unreleased"
                   checked={showUnreleased}
                   onCheckedChange={onShowUnreleasedChange}
                 />
@@ -232,16 +244,19 @@ export function Filters({
             </div>
           </div>
 
-          <SheetFooter className="flex-row">
+          <SheetFooter className="flex-row gap-3">
             <Button
               variant="outline"
-              className="flex-1"
+              className="h-11 flex-1 text-base"
               onClick={resetAll}
               disabled={activeCount === 0}
             >
               Reset
             </Button>
-            <Button className="flex-1" onClick={() => setOpen(false)}>
+            <Button
+              className="h-11 flex-1 text-base"
+              onClick={() => setOpen(false)}
+            >
               Show results
             </Button>
           </SheetFooter>
