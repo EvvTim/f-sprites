@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from "react"
+import { useEffect, useRef, useState, type ReactNode } from "react"
 import { SearchIcon, SlidersHorizontalIcon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -75,6 +75,17 @@ export function Filters({
   onShowUnreleasedChange,
 }: FiltersProps) {
   const [open, setOpen] = useState(false)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (document.activeElement === inputRef.current) {
+        inputRef.current?.blur()
+      }
+    }
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const activeCount =
     (rarity !== "all" ? 1 : 0) +
@@ -96,6 +107,7 @@ export function Filters({
       <div className="relative flex-1">
         <SearchIcon className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground" />
         <Input
+          ref={inputRef}
           value={query}
           onChange={(e) => onQueryChange(e.target.value)}
           placeholder="Search sprites…"
