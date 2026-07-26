@@ -111,7 +111,7 @@ export function Filters({
           value={query}
           onChange={(e) => onQueryChange(e.target.value)}
           placeholder="Search sprites…"
-          className="h-10 rounded-full pl-9 text-sm"
+          className="h-10 rounded-full pl-9 text-base md:text-sm"
         />
       </div>
 
