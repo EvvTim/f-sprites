@@ -22,6 +22,7 @@ export function App() {
   const [rarity, setRarity] = useState<Rarity | "all">("all")
   const [variant, setVariant] = useState<Variant | "all">("all")
   const [onlyOwned, setOnlyOwned] = useState(false)
+  const [onlyMissing, setOnlyMissing] = useState(false)
   const [showUnreleased, setShowUnreleased] = useState(false)
   const [activeSprite, setActiveSprite] = useState<Sprite | null>(null)
   const [pendingRemove, setPendingRemove] = useState<Sprite | null>(null)
@@ -53,6 +54,7 @@ export function App() {
       if (rarity !== "all" && s.rarity !== rarity) return false
       if (variant !== "all" && s.variant !== variant) return false
       if (onlyOwned && !owned[s.id]) return false
+      if (onlyMissing && owned[s.id]) return false
       if (
         q &&
         !s.name.toLowerCase().includes(q) &&
@@ -61,7 +63,7 @@ export function App() {
         return false
       return true
     })
-  }, [query, rarity, variant, onlyOwned, showUnreleased, owned])
+  }, [query, rarity, variant, onlyOwned, onlyMissing, showUnreleased, owned])
 
   return (
     <div className="mx-auto min-h-svh max-w-5xl pb-[calc(env(safe-area-inset-bottom)+2rem)]">
@@ -87,6 +89,8 @@ export function App() {
           onVariantChange={setVariant}
           onlyOwned={onlyOwned}
           onOnlyOwnedChange={setOnlyOwned}
+          onlyMissing={onlyMissing}
+          onOnlyMissingChange={setOnlyMissing}
           showUnreleased={showUnreleased}
           onShowUnreleasedChange={setShowUnreleased}
         />

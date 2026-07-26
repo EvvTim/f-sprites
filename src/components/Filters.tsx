@@ -29,6 +29,8 @@ type FiltersProps = {
   onVariantChange: (value: Variant | "all") => void
   onlyOwned: boolean
   onOnlyOwnedChange: (value: boolean) => void
+  onlyMissing: boolean
+  onOnlyMissingChange: (value: boolean) => void
   showUnreleased: boolean
   onShowUnreleasedChange: (value: boolean) => void
 }
@@ -67,6 +69,8 @@ export function Filters({
   onVariantChange,
   onlyOwned,
   onOnlyOwnedChange,
+  onlyMissing,
+  onOnlyMissingChange,
   showUnreleased,
   onShowUnreleasedChange,
 }: FiltersProps) {
@@ -76,12 +80,14 @@ export function Filters({
     (rarity !== "all" ? 1 : 0) +
     (variant !== "all" ? 1 : 0) +
     (onlyOwned ? 1 : 0) +
+    (onlyMissing ? 1 : 0) +
     (showUnreleased ? 1 : 0)
 
   const resetAll = () => {
     onRarityChange("all")
     onVariantChange("all")
     onOnlyOwnedChange(false)
+    onOnlyMissingChange(false)
     onShowUnreleasedChange(false)
   }
 
@@ -174,7 +180,20 @@ export function Filters({
                 Only owned
                 <Switch
                   checked={onlyOwned}
-                  onCheckedChange={onOnlyOwnedChange}
+                  onCheckedChange={(checked) => {
+                    onOnlyOwnedChange(checked)
+                    if (checked) onOnlyMissingChange(false)
+                  }}
+                />
+              </label>
+              <label className="flex items-center justify-between text-sm">
+                Only missing
+                <Switch
+                  checked={onlyMissing}
+                  onCheckedChange={(checked) => {
+                    onOnlyMissingChange(checked)
+                    if (checked) onOnlyOwnedChange(false)
+                  }}
                 />
               </label>
               <label className="flex items-center justify-between text-sm">
