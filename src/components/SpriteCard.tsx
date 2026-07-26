@@ -1,6 +1,6 @@
 import { CheckIcon } from "lucide-react"
 
-import { RARITY_COLORS, VARIANT_LABELS } from "@/data/sprites"
+import { RARITY_COLORS, VARIANT_LABELS, getSpriteImage } from "@/data/sprites"
 import type { Sprite } from "@/data/types"
 import { cn } from "@/lib/utils"
 
@@ -39,7 +39,7 @@ export function SpriteCard({
           )}
         >
           <img
-            src={sprite.image}
+            src={getSpriteImage(sprite)}
             alt={sprite.name}
             loading="lazy"
             className="size-4/5 object-contain"

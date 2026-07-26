@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh src/data/sprites.json and public/sprites/*.webp from fortnite.gg.
+"""Refresh src/data/sprites.json and src/assets/sprites/*.webp from fortnite.gg.
 
 fortnite.gg/sprites sits behind a Cloudflare JS challenge, so it can't be
 curled directly. Instead this pulls the latest Wayback Machine snapshot of
@@ -25,7 +25,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "src" / "data" / "sprites.json"
-IMAGES_DIR = ROOT / "public" / "sprites"
+IMAGES_DIR = ROOT / "src" / "assets" / "sprites"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 
 CARD_RE = re.compile(r'<div class="sprite-card"([^>]*)>(.*?)</div></div>', re.DOTALL)

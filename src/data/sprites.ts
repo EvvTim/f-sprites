@@ -3,6 +3,21 @@ import type { Rarity, Sprite, Variant } from "./types"
 
 export const sprites = raw as Sprite[]
 
+const imageModules = import.meta.glob("../assets/sprites/*.webp", {
+  eager: true,
+  import: "default",
+}) as Record<string, string>
+
+const imagesByFilename: Record<string, string> = {}
+for (const [path, url] of Object.entries(imageModules)) {
+  imagesByFilename[path.split("/").pop()!] = url
+}
+
+export function getSpriteImage(sprite: Sprite): string {
+  const filename = sprite.image.split("/").pop()!
+  return imagesByFilename[filename] ?? sprite.image
+}
+
 export const VARIANT_ORDER: Variant[] = [
   "base",
   "gold",

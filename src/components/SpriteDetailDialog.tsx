@@ -12,6 +12,7 @@ import {
   RARITY_LABELS,
   VARIANT_COLORS,
   VARIANT_LABELS,
+  getSpriteImage,
   sortByVariant,
   sprites,
 } from "@/data/sprites"
@@ -60,7 +61,7 @@ export function SpriteDetailDialog({
                 )}
               >
                 <img
-                  src={sprite.image}
+                  src={getSpriteImage(sprite)}
                   alt={sprite.name}
                   className="size-4/5 object-contain"
                 />
@@ -166,7 +167,7 @@ function SiblingThumb({
         )}
       >
         <img
-          src={sibling.image}
+          src={getSpriteImage(sibling)}
           alt={sibling.name}
           loading="lazy"
           className="size-4/5 object-contain"
