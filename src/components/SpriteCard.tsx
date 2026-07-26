@@ -18,7 +18,7 @@ export function SpriteCard({
   onOpen,
 }: SpriteCardProps) {
   return (
-    <div
+    <li
       className={cn(
         "group relative flex flex-col overflow-hidden rounded-xl border transition-all",
         owned
@@ -74,6 +74,6 @@ export function SpriteCard({
       >
         <CheckIcon className="size-4" strokeWidth={3} />
       </button>
-    </div>
+    </li>
   )
 }

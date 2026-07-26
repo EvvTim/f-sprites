@@ -107,7 +107,7 @@ export function Filters({
   }
 
   return (
-    <div className="flex items-center gap-2">
+    <search className="flex items-center gap-2">
       <div className="relative flex-1">
         <SearchIcon className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground" />
         <Input
@@ -155,93 +155,107 @@ export function Filters({
           </SheetHeader>
 
           <div className="flex flex-col gap-4 px-4 pb-2">
-            <div className="flex flex-col gap-2">
-              <p className="text-xs font-medium text-muted-foreground">
+            <fieldset className="flex flex-col gap-2">
+              <legend className="text-xs font-medium text-muted-foreground">
                 Rarity
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Chip
-                  active={rarity === "all"}
-                  onClick={() => onRarityChange("all")}
-                >
-                  All
-                </Chip>
+              </legend>
+              <ul className="flex flex-wrap gap-2">
+                <li>
+                  <Chip
+                    active={rarity === "all"}
+                    onClick={() => onRarityChange("all")}
+                  >
+                    All
+                  </Chip>
+                </li>
                 {RARITY_ORDER.map((r) => (
-                  <Chip
-                    key={r}
-                    active={rarity === r}
-                    onClick={() => onRarityChange(rarity === r ? "all" : r)}
-                  >
-                    {RARITY_LABELS[r]}
-                  </Chip>
+                  <li key={r}>
+                    <Chip
+                      active={rarity === r}
+                      onClick={() => onRarityChange(rarity === r ? "all" : r)}
+                    >
+                      {RARITY_LABELS[r]}
+                    </Chip>
+                  </li>
                 ))}
-              </div>
-            </div>
+              </ul>
+            </fieldset>
 
-            <div className="flex flex-col gap-2">
-              <p className="text-xs font-medium text-muted-foreground">
+            <fieldset className="flex flex-col gap-2">
+              <legend className="text-xs font-medium text-muted-foreground">
                 Variant
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Chip
-                  active={variant === "all"}
-                  onClick={() => onVariantChange("all")}
-                >
-                  All
-                </Chip>
-                {VARIANT_ORDER.map((v) => (
+              </legend>
+              <ul className="flex flex-wrap gap-2">
+                <li>
                   <Chip
-                    key={v}
-                    active={variant === v}
-                    onClick={() => onVariantChange(variant === v ? "all" : v)}
+                    active={variant === "all"}
+                    onClick={() => onVariantChange("all")}
                   >
-                    {VARIANT_LABELS[v]}
+                    All
                   </Chip>
+                </li>
+                {VARIANT_ORDER.map((v) => (
+                  <li key={v}>
+                    <Chip
+                      active={variant === v}
+                      onClick={() =>
+                        onVariantChange(variant === v ? "all" : v)
+                      }
+                    >
+                      {VARIANT_LABELS[v]}
+                    </Chip>
+                  </li>
                 ))}
-              </div>
-            </div>
+              </ul>
+            </fieldset>
 
-            <div className="flex flex-col divide-y divide-border border-t border-border">
-              <label
-                htmlFor="filter-only-owned"
-                className="flex min-h-11 cursor-pointer items-center justify-between py-2 text-sm active:bg-muted/50"
-              >
-                Only owned
-                <Switch
-                  id="filter-only-owned"
-                  checked={onlyOwned}
-                  onCheckedChange={(checked) => {
-                    onOnlyOwnedChange(checked)
-                    if (checked) onOnlyMissingChange(false)
-                  }}
-                />
-              </label>
-              <label
-                htmlFor="filter-only-missing"
-                className="flex min-h-11 cursor-pointer items-center justify-between py-2 text-sm active:bg-muted/50"
-              >
-                Only missing
-                <Switch
-                  id="filter-only-missing"
-                  checked={onlyMissing}
-                  onCheckedChange={(checked) => {
-                    onOnlyMissingChange(checked)
-                    if (checked) onOnlyOwnedChange(false)
-                  }}
-                />
-              </label>
-              <label
-                htmlFor="filter-show-unreleased"
-                className="flex min-h-11 cursor-pointer items-center justify-between py-2 text-sm active:bg-muted/50"
-              >
-                Show unreleased
-                <Switch
-                  id="filter-show-unreleased"
-                  checked={showUnreleased}
-                  onCheckedChange={onShowUnreleasedChange}
-                />
-              </label>
-            </div>
+            <ul className="flex flex-col divide-y divide-border border-t border-border">
+              <li>
+                <label
+                  htmlFor="filter-only-owned"
+                  className="flex min-h-11 cursor-pointer items-center justify-between py-2 text-sm active:bg-muted/50"
+                >
+                  Only owned
+                  <Switch
+                    id="filter-only-owned"
+                    checked={onlyOwned}
+                    onCheckedChange={(checked) => {
+                      onOnlyOwnedChange(checked)
+                      if (checked) onOnlyMissingChange(false)
+                    }}
+                  />
+                </label>
+              </li>
+              <li>
+                <label
+                  htmlFor="filter-only-missing"
+                  className="flex min-h-11 cursor-pointer items-center justify-between py-2 text-sm active:bg-muted/50"
+                >
+                  Only missing
+                  <Switch
+                    id="filter-only-missing"
+                    checked={onlyMissing}
+                    onCheckedChange={(checked) => {
+                      onOnlyMissingChange(checked)
+                      if (checked) onOnlyOwnedChange(false)
+                    }}
+                  />
+                </label>
+              </li>
+              <li>
+                <label
+                  htmlFor="filter-show-unreleased"
+                  className="flex min-h-11 cursor-pointer items-center justify-between py-2 text-sm active:bg-muted/50"
+                >
+                  Show unreleased
+                  <Switch
+                    id="filter-show-unreleased"
+                    checked={showUnreleased}
+                    onCheckedChange={onShowUnreleasedChange}
+                  />
+                </label>
+              </li>
+            </ul>
           </div>
 
           <SheetFooter className="flex-row gap-3">
@@ -262,6 +276,6 @@ export function Filters({
           </SheetFooter>
         </SheetContent>
       </Sheet>
-    </div>
+    </search>
   )
 }

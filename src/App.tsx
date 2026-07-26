@@ -96,23 +96,25 @@ export function App() {
         />
       </div>
 
-      {filtered.length === 0 ? (
-        <p className="mt-10 text-center text-sm text-muted-foreground">
-          No sprites match your filters.
-        </p>
-      ) : (
-        <div className="grid grid-cols-2 gap-3 px-4 pt-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-          {filtered.map((sprite) => (
-            <SpriteCard
-              key={sprite.id}
-              sprite={sprite}
-              owned={Boolean(owned[sprite.id])}
-              onToggleOwned={() => handleToggleOwned(sprite)}
-              onOpen={() => setActiveSprite(sprite)}
-            />
-          ))}
-        </div>
-      )}
+      <main>
+        {filtered.length === 0 ? (
+          <p className="mt-10 text-center text-sm text-muted-foreground">
+            No sprites match your filters.
+          </p>
+        ) : (
+          <ul className="grid grid-cols-2 gap-3 px-4 pt-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+            {filtered.map((sprite) => (
+              <SpriteCard
+                key={sprite.id}
+                sprite={sprite}
+                owned={Boolean(owned[sprite.id])}
+                onToggleOwned={() => handleToggleOwned(sprite)}
+                onOpen={() => setActiveSprite(sprite)}
+              />
+            ))}
+          </ul>
+        )}
+      </main>
 
       <SpriteDetailDialog
         sprite={activeSprite}

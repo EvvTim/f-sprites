@@ -67,29 +67,29 @@ export function SpriteDetailDialog({
                 />
               </div>
 
-              <div className="flex flex-wrap items-center justify-center gap-1.5">
-                <span
+              <ul className="flex flex-wrap items-center justify-center gap-1.5">
+                <li
                   className={cn(
                     "rounded-full px-2 py-0.5 text-xs font-medium",
                     RARITY_COLORS[sprite.rarity]
                   )}
                 >
                   {RARITY_LABELS[sprite.rarity]}
-                </span>
-                <span
+                </li>
+                <li
                   className={cn(
                     "rounded-full px-2 py-0.5 text-xs font-medium",
                     VARIANT_COLORS[sprite.variant]
                   )}
                 >
                   {VARIANT_LABELS[sprite.variant]}
-                </span>
+                </li>
                 {sprite.unreleased && (
-                  <span className="rounded-full bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground">
+                  <li className="rounded-full bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground">
                     Unreleased
-                  </span>
+                  </li>
                 )}
-              </div>
+              </ul>
 
               <p className="text-sm text-muted-foreground">
                 Drop chance: {sprite.dropChance}
@@ -118,7 +118,7 @@ export function SpriteDetailDialog({
                 <p className="text-xs font-medium text-muted-foreground">
                   Variants
                 </p>
-                <div className="grid grid-cols-4 gap-2">
+                <ul className="grid grid-cols-4 gap-2">
                   {siblings.map((sibling) => (
                     <SiblingThumb
                       key={sibling.id}
@@ -127,7 +127,7 @@ export function SpriteDetailDialog({
                       onSelect={() => onSelect(sibling)}
                     />
                   ))}
-                </div>
+                </ul>
               </div>
             )}
           </>
@@ -149,38 +149,40 @@ function SiblingThumb({
   const owned = useCollectionStore((s) => s.isOwned(sibling.id))
 
   return (
-    <button
-      type="button"
-      onClick={onSelect}
-      className={cn(
-        "flex flex-col items-center gap-1 rounded-lg border p-1.5 transition-colors",
-        active
-          ? "border-primary/50 bg-muted/50"
-          : "border-transparent hover:bg-muted/40"
-      )}
-    >
-      <div
+    <li>
+      <button
+        type="button"
+        onClick={onSelect}
         className={cn(
-          "relative flex aspect-square w-full items-center justify-center rounded-md bg-muted/50 ring-2 ring-transparent",
-          owned && "ring-emerald-500",
-          sibling.unreleased && "opacity-50 grayscale"
+          "flex w-full flex-col items-center gap-1 rounded-lg border p-1.5 transition-colors",
+          active
+            ? "border-primary/50 bg-muted/50"
+            : "border-transparent hover:bg-muted/40"
         )}
       >
-        <img
-          src={getSpriteImage(sibling)}
-          alt={sibling.name}
-          loading="lazy"
-          className="size-4/5 object-contain"
-        />
-        {owned && (
-          <span className="absolute -top-1 -right-1 flex size-3.5 items-center justify-center rounded-full bg-emerald-500 text-white">
-            <CheckIcon className="size-2.5" strokeWidth={4} />
-          </span>
-        )}
-      </div>
-      <span className="text-[10px] leading-none text-muted-foreground">
-        {VARIANT_LABELS[sibling.variant]}
-      </span>
-    </button>
+        <div
+          className={cn(
+            "relative flex aspect-square w-full items-center justify-center rounded-md bg-muted/50 ring-2 ring-transparent",
+            owned && "ring-emerald-500",
+            sibling.unreleased && "opacity-50 grayscale"
+          )}
+        >
+          <img
+            src={getSpriteImage(sibling)}
+            alt={sibling.name}
+            loading="lazy"
+            className="size-4/5 object-contain"
+          />
+          {owned && (
+            <span className="absolute -top-1 -right-1 flex size-3.5 items-center justify-center rounded-full bg-emerald-500 text-white">
+              <CheckIcon className="size-2.5" strokeWidth={4} />
+            </span>
+          )}
+        </div>
+        <span className="text-[10px] leading-none text-muted-foreground">
+          {VARIANT_LABELS[sibling.variant]}
+        </span>
+      </button>
+    </li>
   )
 }
