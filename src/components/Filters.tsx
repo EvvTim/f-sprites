@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from "react"
-import { SearchIcon, SlidersHorizontalIcon } from "lucide-react"
+import { SearchIcon, SlidersHorizontalIcon, XIcon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -115,8 +115,18 @@ export function Filters({
           value={query}
           onChange={(e) => onQueryChange(e.target.value)}
           placeholder="Search sprites…"
-          className="h-10 rounded-full pl-9 text-base md:text-sm"
+          className="h-10 rounded-full pl-9 pr-9 text-base md:text-sm"
         />
+        {query && (
+          <button
+            type="button"
+            onClick={() => onQueryChange("")}
+            aria-label="Clear search"
+            className="absolute top-1/2 right-3 flex size-4 -translate-y-1/2 items-center justify-center text-muted-foreground hover:text-foreground"
+          >
+            <XIcon className="size-4" />
+          </button>
+        )}
       </div>
 
       <Sheet open={open} onOpenChange={setOpen}>
