@@ -7,16 +7,10 @@ import { cn } from "@/lib/utils"
 type SpriteCardProps = {
   sprite: Sprite
   owned: boolean
-  onToggleOwned: () => void
   onOpen: () => void
 }
 
-export function SpriteCard({
-  sprite,
-  owned,
-  onToggleOwned,
-  onOpen,
-}: SpriteCardProps) {
+export function SpriteCard({ sprite, owned, onOpen }: SpriteCardProps) {
   return (
     <li
       className={cn(
@@ -60,20 +54,11 @@ export function SpriteCard({
         </div>
       </button>
 
-      <button
-        type="button"
-        onClick={onToggleOwned}
-        aria-pressed={owned}
-        aria-label={owned ? "Mark as not owned" : "Mark as owned"}
-        className={cn(
-          "absolute top-1 right-1 flex size-9 items-center justify-center rounded-full border-2 transition-all active:scale-90",
-          owned
-            ? "border-emerald-600 bg-emerald-500 text-white shadow-sm"
-            : "border-border/80 bg-background/90 text-transparent backdrop-blur-sm hover:border-foreground/30 hover:text-muted-foreground/60"
-        )}
-      >
-        <CheckIcon className="size-4" strokeWidth={3} />
-      </button>
+      {owned && (
+        <span className="absolute top-1 right-1 flex size-6 items-center justify-center rounded-full border-2 border-emerald-600 bg-emerald-500 text-white shadow-sm">
+          <CheckIcon className="size-3.5" strokeWidth={3} />
+        </span>
+      )}
     </li>
   )
 }
