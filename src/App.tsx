@@ -11,6 +11,7 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
 import { Filters } from "@/components/Filters"
+import { InstallPrompt } from "@/components/InstallPrompt"
 import { SpriteCard } from "@/components/SpriteCard"
 import { SpriteDetailDialog } from "@/components/SpriteDetailDialog"
 import { sprites } from "@/data/sprites"
@@ -154,6 +155,8 @@ export function App() {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
+
+      <InstallPrompt />
     </div>
   )
 }
