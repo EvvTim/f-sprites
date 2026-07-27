@@ -36,6 +36,7 @@ export function App() {
       setPendingRemove(sprite)
     } else {
       toggleOwned(sprite.id)
+      setActiveSprite(null)
     }
   }
 
