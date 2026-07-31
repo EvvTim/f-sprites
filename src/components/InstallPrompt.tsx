@@ -3,6 +3,7 @@ import { DownloadIcon, ShareIcon, XIcon } from "lucide-react"
 
 import peanutIcon from "@/assets/sprites/T_Icon_BR_Creature_Sprite_BurntPeanut_ui_L.webp"
 import { Button } from "@/components/ui/button"
+import { haptics } from "@/lib/haptics"
 
 const DISMISS_KEY = "install-prompt-dismissed"
 
@@ -55,12 +56,14 @@ export function InstallPrompt() {
   }, [])
 
   const dismiss = () => {
+    haptics.tap()
     localStorage.setItem(DISMISS_KEY, "1")
     setDismissed(true)
   }
 
   const handleInstall = async () => {
     if (!deferredPrompt) return
+    haptics.tap()
     await deferredPrompt.prompt()
     await deferredPrompt.userChoice
     setDeferredPrompt(null)

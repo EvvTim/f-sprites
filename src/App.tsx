@@ -12,6 +12,7 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
 import { CollectionProgress } from "@/components/CollectionProgress"
+// import { Confetti } from "@/components/Confetti"
 import { Filters } from "@/components/Filters"
 import { InstallPrompt } from "@/components/InstallPrompt"
 import { SpriteCard } from "@/components/SpriteCard"
@@ -20,7 +21,8 @@ import { Button } from "@/components/ui/button"
 import { sprites } from "@/data/sprites"
 import type { Rarity, Sprite, Variant } from "@/data/types"
 import { updateAppBadge } from "@/lib/badge"
-import { vibrate } from "@/lib/haptics"
+import { createConfettiBurst, type ConfettiParticle } from "@/lib/confetti"
+import { haptics } from "@/lib/haptics"
 import { cn } from "@/lib/utils"
 import { useCollectionStore } from "@/store/useCollectionStore"
 
@@ -34,15 +36,36 @@ export function App() {
   const [activeSprite, setActiveSprite] = useState<Sprite | null>(null)
   const [pendingRemove, setPendingRemove] = useState<Sprite | null>(null)
   const [progressOpen, setProgressOpen] = useState(false)
+  const [celebration, setCelebration] = useState<{
+    key: number
+    particles: ConfettiParticle[]
+  } | null>(null)
 
   const owned = useCollectionStore((s) => s.owned)
   const toggleOwned = useCollectionStore((s) => s.toggleOwned)
 
   const handleToggleOwned = (sprite: Sprite) => {
     if (owned[sprite.id]) {
+      haptics.tap()
       setPendingRemove(sprite)
     } else {
-      vibrate()
+      const releasedSiblings = sprites.filter(
+        (s) => s.parent === sprite.parent && !s.unreleased
+      )
+      const wasSetComplete =
+        releasedSiblings.length > 0 &&
+        releasedSiblings.every((s) => owned[s.id])
+      const isSetComplete =
+        releasedSiblings.length > 0 &&
+        releasedSiblings.every((s) => s.id === sprite.id || owned[s.id])
+
+      if (!wasSetComplete && isSetComplete) {
+        haptics.celebrate()
+        setCelebration({ key: Date.now(), particles: createConfettiBurst() })
+      } else {
+        haptics.toggleOn()
+      }
+
       toggleOwned(sprite.id)
       setActiveSprite(null)
     }
@@ -89,7 +112,10 @@ export function App() {
             variant="outline"
             size="sm"
             className="rounded-full"
-            onClick={() => setProgressOpen(true)}
+            onClick={() => {
+              haptics.tap()
+              setProgressOpen(true)
+            }}
           >
             <BarChart3Icon />
             <span className="font-semibold text-emerald-600 dark:text-emerald-400">
@@ -178,14 +204,17 @@ export function App() {
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter className="gap-3">
-            <AlertDialogCancel className="h-11 text-base">
+            <AlertDialogCancel
+              className="h-11 text-base"
+              onClick={() => haptics.tap()}
+            >
               Cancel
             </AlertDialogCancel>
             <AlertDialogAction
               className="h-11 text-base"
               onClick={() => {
                 if (pendingRemove) {
-                  vibrate()
+                  haptics.toggleOff()
                   toggleOwned(pendingRemove.id)
                 }
                 setPendingRemove(null)
@@ -198,6 +227,14 @@ export function App() {
       </AlertDialog>
 
       <CollectionProgress open={progressOpen} onOpenChange={setProgressOpen} />
+
+      {/*{celebration !== null && (*/}
+      {/*  <Confetti*/}
+      {/*    key={celebration.key}*/}
+      {/*    particles={celebration.particles}*/}
+      {/*    onDone={() => setCelebration(null)}*/}
+      {/*  />*/}
+      {/*)}*/}
 
       <InstallPrompt />
     </div>

@@ -18,6 +18,7 @@ import {
   VARIANT_ORDER,
 } from "@/data/sprites"
 import type { Rarity, Variant } from "@/data/types"
+import { haptics } from "@/lib/haptics"
 import { cn } from "@/lib/utils"
 
 type FiltersProps = {
@@ -47,7 +48,10 @@ function Chip({
   return (
     <button
       type="button"
-      onClick={onClick}
+      onClick={() => {
+        haptics.tap()
+        onClick()
+      }}
       className={cn(
         "flex min-h-9 shrink-0 items-center rounded-full border px-3.5 py-2 text-xs font-medium whitespace-nowrap transition-colors active:scale-95",
         active
@@ -120,7 +124,10 @@ export function Filters({
         {query && (
           <button
             type="button"
-            onClick={() => onQueryChange("")}
+            onClick={() => {
+              haptics.tap()
+              onQueryChange("")
+            }}
             aria-label="Clear search"
             className="absolute top-1/2 right-1 flex size-8 -translate-y-1/2 items-center justify-center text-muted-foreground active:scale-90 hover:text-foreground"
           >
@@ -135,7 +142,10 @@ export function Filters({
           variant={activeCount > 0 ? "default" : "outline"}
           size="icon-lg"
           className="relative size-11 shrink-0 rounded-full"
-          onClick={() => setOpen(true)}
+          onClick={() => {
+            haptics.tap()
+            setOpen(true)
+          }}
           aria-label="Filters"
         >
           <SlidersHorizontalIcon className="size-4" />
@@ -220,6 +230,7 @@ export function Filters({
                     id="filter-only-owned"
                     checked={onlyOwned}
                     onCheckedChange={(checked) => {
+                      haptics.tap()
                       onOnlyOwnedChange(checked)
                       if (checked) onOnlyMissingChange(false)
                     }}
@@ -236,6 +247,7 @@ export function Filters({
                     id="filter-only-missing"
                     checked={onlyMissing}
                     onCheckedChange={(checked) => {
+                      haptics.tap()
                       onOnlyMissingChange(checked)
                       if (checked) onOnlyOwnedChange(false)
                     }}
@@ -251,7 +263,10 @@ export function Filters({
                   <Switch
                     id="filter-show-unreleased"
                     checked={showUnreleased}
-                    onCheckedChange={onShowUnreleasedChange}
+                    onCheckedChange={(checked) => {
+                      haptics.tap()
+                      onShowUnreleasedChange(checked)
+                    }}
                   />
                 </label>
               </li>
@@ -262,14 +277,20 @@ export function Filters({
             <Button
               variant="outline"
               className="h-11 flex-1 text-base"
-              onClick={resetAll}
+              onClick={() => {
+                haptics.tap()
+                resetAll()
+              }}
               disabled={activeCount === 0}
             >
               Reset
             </Button>
             <Button
               className="h-11 flex-1 text-base"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                haptics.tap()
+                setOpen(false)
+              }}
             >
               Show results
             </Button>

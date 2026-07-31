@@ -17,8 +17,9 @@ import {
   sprites,
 } from "@/data/sprites"
 import type { Sprite } from "@/data/types"
-import { useCollectionStore } from "@/store/useCollectionStore"
+import { haptics } from "@/lib/haptics"
 import { cn } from "@/lib/utils"
+import { useCollectionStore } from "@/store/useCollectionStore"
 
 type SpriteDetailDialogProps = {
   sprite: Sprite | null
@@ -152,7 +153,10 @@ function SiblingThumb({
     <li>
       <button
         type="button"
-        onClick={onSelect}
+        onClick={() => {
+          haptics.tap()
+          onSelect()
+        }}
         className={cn(
           "flex w-full flex-col items-center gap-1 rounded-lg border p-1.5 transition-colors",
           active

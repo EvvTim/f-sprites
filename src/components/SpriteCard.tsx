@@ -2,6 +2,7 @@ import { CheckIcon } from "lucide-react"
 
 import { RARITY_COLORS, VARIANT_LABELS, getSpriteImage } from "@/data/sprites"
 import type { Sprite } from "@/data/types"
+import { haptics } from "@/lib/haptics"
 import { cn } from "@/lib/utils"
 
 type SpriteCardProps = {
@@ -22,7 +23,10 @@ export function SpriteCard({ sprite, owned, onOpen }: SpriteCardProps) {
     >
       <button
         type="button"
-        onClick={onOpen}
+        onClick={() => {
+          haptics.tap()
+          onOpen()
+        }}
         className="flex flex-1 flex-col items-center gap-1.5 p-2.5 text-left outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
       >
         <div
