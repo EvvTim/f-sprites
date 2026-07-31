@@ -41,6 +41,8 @@ export function App() {
     particles: ConfettiParticle[]
   } | null>(null)
 
+  console.log(celebration)
+
   const owned = useCollectionStore((s) => s.owned)
   const toggleOwned = useCollectionStore((s) => s.toggleOwned)
 
