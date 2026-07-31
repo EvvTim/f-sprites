@@ -18,6 +18,8 @@ export function getSpriteImage(sprite: Sprite): string {
   return imagesByFilename[filename] ?? sprite.image
 }
 
+export const allSpriteImageUrls = Object.values(imagesByFilename)
+
 export const VARIANT_ORDER: Variant[] = [
   "base",
   "gold",
