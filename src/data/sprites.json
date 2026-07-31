@@ -18,7 +18,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Candy_ui_L.webp",
-    "dropChance": "0.62%",
+    "dropChance": "0.53%",
     "unreleased": false
   },
   {
@@ -29,7 +29,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Galaxy_ui_L.webp",
-    "dropChance": "0.5%",
+    "dropChance": "0.43%",
     "unreleased": false
   },
   {
@@ -40,7 +40,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Gold_ui_L.webp",
-    "dropChance": "0.75%",
+    "dropChance": "0.53%",
     "unreleased": false
   },
   {
@@ -62,7 +62,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Candy_ui_L.webp",
-    "dropChance": "0.62%",
+    "dropChance": "0.53%",
     "unreleased": false
   },
   {
@@ -73,7 +73,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Galaxy_ui_L.webp",
-    "dropChance": "0.5%",
+    "dropChance": "0.43%",
     "unreleased": false
   },
   {
@@ -84,7 +84,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Gold_ui_L.webp",
-    "dropChance": "0.75%",
+    "dropChance": "0.53%",
     "unreleased": false
   },
   {
@@ -106,7 +106,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fire_Candy_ui_L.webp",
-    "dropChance": "0.62%",
+    "dropChance": "0.53%",
     "unreleased": false
   },
   {
@@ -117,7 +117,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fire_Galaxy_ui_L.webp",
-    "dropChance": "0.5%",
+    "dropChance": "0.43%",
     "unreleased": false
   },
   {
@@ -128,7 +128,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fire_Gold_ui_L.webp",
-    "dropChance": "0.75%",
+    "dropChance": "0.53%",
     "unreleased": false
   },
   {
@@ -139,7 +139,7 @@
     "rarity": "epic",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Duck_Default_L.webp",
-    "dropChance": "9%",
+    "dropChance": "6.48%",
     "unreleased": false
   },
   {
@@ -150,7 +150,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Duck_Candy_L.webp",
-    "dropChance": "0.3%",
+    "dropChance": "0.37%",
     "unreleased": false
   },
   {
@@ -161,7 +161,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Duck_Galaxy_L.webp",
-    "dropChance": "0.16%",
+    "dropChance": "0.25%",
     "unreleased": false
   },
   {
@@ -172,7 +172,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Duck_Gold_L.webp",
-    "dropChance": "0.4%",
+    "dropChance": "0.62%",
     "unreleased": false
   },
   {
@@ -183,7 +183,7 @@
     "rarity": "epic",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Ghost_Unvault_L.webp",
-    "dropChance": "9%",
+    "dropChance": "5.25%",
     "unreleased": false
   },
   {
@@ -194,7 +194,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Ghost_Candy_L.webp",
-    "dropChance": "0.3%",
+    "dropChance": "0.37%",
     "unreleased": false
   },
   {
@@ -205,7 +205,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Ghost_Galaxy_L.webp",
-    "dropChance": "0.16%",
+    "dropChance": "0.25%",
     "unreleased": false
   },
   {
@@ -216,7 +216,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Ghost_Gold_L.webp",
-    "dropChance": "0.4%",
+    "dropChance": "0.62%",
     "unreleased": false
   },
   {
@@ -227,7 +227,7 @@
     "rarity": "legendary",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Sleepy_ui_L.webp",
-    "dropChance": "6.98%",
+    "dropChance": "4.45%",
     "unreleased": false
   },
   {
@@ -238,7 +238,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Sleepy_Candy_ui_L.webp",
-    "dropChance": "0.23%",
+    "dropChance": "0.26%",
     "unreleased": false
   },
   {
@@ -249,7 +249,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Sleepy_Galaxy_ui_L.webp",
-    "dropChance": "0.12%",
+    "dropChance": "0.17%",
     "unreleased": false
   },
   {
@@ -260,7 +260,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Sleepy_Gold_ui_L.webp",
-    "dropChance": "0.31%",
+    "dropChance": "0.43%",
     "unreleased": false
   },
   {
@@ -271,7 +271,7 @@
     "rarity": "legendary",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Punk_ui_L.webp",
-    "dropChance": "6.98%",
+    "dropChance": "4.45%",
     "unreleased": false
   },
   {
@@ -282,7 +282,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Punk_Candy_ui_L.webp",
-    "dropChance": "0.23%",
+    "dropChance": "0.26%",
     "unreleased": false
   },
   {
@@ -293,7 +293,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Punk_Galaxy_ui_L.webp",
-    "dropChance": "0.12%",
+    "dropChance": "0.17%",
     "unreleased": false
   },
   {
@@ -304,7 +304,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Punk_Gold_ui_L.webp",
-    "dropChance": "0.31%",
+    "dropChance": "0.43%",
     "unreleased": false
   },
   {
@@ -315,7 +315,7 @@
     "rarity": "epic",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_King_ui_L.webp",
-    "dropChance": "9%",
+    "dropChance": "5.25%",
     "unreleased": false
   },
   {
@@ -326,7 +326,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_King_Candy_ui_L.webp",
-    "dropChance": "0.3%",
+    "dropChance": "0.37%",
     "unreleased": false
   },
   {
@@ -337,7 +337,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_King_Galaxy_ui_L.webp",
-    "dropChance": "0.16%",
+    "dropChance": "0.25%",
     "unreleased": false
   },
   {
@@ -348,7 +348,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_King_Gold_ui_L.webp",
-    "dropChance": "0.4%",
+    "dropChance": "0.62%",
     "unreleased": false
   },
   {
@@ -359,7 +359,7 @@
     "rarity": "mythic",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_ui_L.webp",
-    "dropChance": "0.00093%",
+    "dropChance": "0%",
     "unreleased": false
   },
   {
@@ -370,7 +370,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Candy_ui_L.webp",
-    "dropChance": "0.000031%",
+    "dropChance": "0.000085%",
     "unreleased": false
   },
   {
@@ -381,7 +381,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Galaxy_ui_L.webp",
-    "dropChance": "0.000016%",
+    "dropChance": "0.000056%",
     "unreleased": false
   },
   {
@@ -392,7 +392,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Gold_ui_L.webp",
-    "dropChance": "0.000041%",
+    "dropChance": "0.00014%",
     "unreleased": false
   },
   {
@@ -403,7 +403,7 @@
     "rarity": "epic",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_RedDemon_Default_L.webp",
-    "dropChance": "9%",
+    "dropChance": "6.48%",
     "unreleased": false
   },
   {
@@ -414,7 +414,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_RedDemon_Candy_L.webp",
-    "dropChance": "0.3%",
+    "dropChance": "0.37%",
     "unreleased": false
   },
   {
@@ -425,7 +425,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_RedDemon_Galaxy_L.webp",
-    "dropChance": "0.16%",
+    "dropChance": "0.25%",
     "unreleased": false
   },
   {
@@ -436,7 +436,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_RedDemon_Gold_L.webp",
-    "dropChance": "0.4%",
+    "dropChance": "0.62%",
     "unreleased": false
   },
   {
@@ -447,7 +447,7 @@
     "rarity": "mythic",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_BurntPeanut_ui_L.webp",
-    "dropChance": "0%",
+    "dropChance": "2.14%",
     "unreleased": false
   },
   {
@@ -458,7 +458,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Air_Gold_L.webp",
-    "dropChance": "0.75%",
+    "dropChance": "0.53%",
     "unreleased": false
   },
   {
@@ -469,7 +469,7 @@
     "rarity": "special",
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Holofoil_ui_L.webp",
-    "dropChance": "0.25%",
+    "dropChance": "0.53%",
     "unreleased": false
   },
   {
@@ -480,7 +480,7 @@
     "rarity": "special",
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Duck_Gem_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.1%",
     "unreleased": true
   },
   {
@@ -491,7 +491,7 @@
     "rarity": "special",
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Gem_ui_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.37%",
     "unreleased": true
   },
   {
@@ -502,7 +502,7 @@
     "rarity": "special",
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fire_Holofoil_ui_L.webp",
-    "dropChance": "0.25%",
+    "dropChance": "0.53%",
     "unreleased": false
   },
   {
@@ -513,7 +513,7 @@
     "rarity": "special",
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_RedDemon_Gem_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.1%",
     "unreleased": true
   },
   {
@@ -524,7 +524,7 @@
     "rarity": "special",
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Ghost_Holo_L.webp",
-    "dropChance": "0.06%",
+    "dropChance": "1.23%",
     "unreleased": false
   },
   {
@@ -535,7 +535,7 @@
     "rarity": "legendary",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Boss_ui_L.webp",
-    "dropChance": "6.98%",
+    "dropChance": "4.45%",
     "unreleased": false
   },
   {
@@ -546,7 +546,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Boss_Gold_ui_L.webp",
-    "dropChance": "0.31%",
+    "dropChance": "0.43%",
     "unreleased": false
   },
   {
@@ -557,7 +557,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Boss_Candy_ui_L.webp",
-    "dropChance": "0.23%",
+    "dropChance": "0.26%",
     "unreleased": false
   },
   {
@@ -568,7 +568,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Boss_Galaxy_ui_L.webp",
-    "dropChance": "0.12%",
+    "dropChance": "0.17%",
     "unreleased": false
   },
   {
@@ -579,7 +579,7 @@
     "rarity": "legendary",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Seven_ui_L.webp",
-    "dropChance": "6.98%",
+    "dropChance": "3.63%",
     "unreleased": false
   },
   {
@@ -590,7 +590,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Seven_Candy_ui_L.webp",
-    "dropChance": "0.23%",
+    "dropChance": "0.26%",
     "unreleased": false
   },
   {
@@ -601,7 +601,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Seven_Galaxy_ui_L.webp",
-    "dropChance": "0.12%",
+    "dropChance": "0.17%",
     "unreleased": false
   },
   {
@@ -612,7 +612,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Seven_Gold_ui_L.webp",
-    "dropChance": "0.31%",
+    "dropChance": "0.43%",
     "unreleased": false
   },
   {
@@ -623,7 +623,7 @@
     "rarity": "special",
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Seven_Holofoil_ui_L.webp",
-    "dropChance": "0.05%",
+    "dropChance": "0.85%",
     "unreleased": false
   },
   {
@@ -645,7 +645,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fishy_Candy_ui_L.webp",
-    "dropChance": "0.62%",
+    "dropChance": "0.53%",
     "unreleased": false
   },
   {
@@ -656,7 +656,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fishy_Galaxy_ui_L.webp",
-    "dropChance": "0.5%",
+    "dropChance": "0.43%",
     "unreleased": false
   },
   {
@@ -667,7 +667,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fishy_Gold_ui_L.webp",
-    "dropChance": "0.75%",
+    "dropChance": "0.64%",
     "unreleased": false
   },
   {
@@ -678,7 +678,7 @@
     "rarity": "epic",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Soccer_ui_L.webp",
-    "dropChance": "6.98%",
+    "dropChance": "5.25%",
     "unreleased": false
   },
   {
@@ -689,7 +689,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Soccer_Candy_L.webp",
-    "dropChance": "0.23%",
+    "dropChance": "0.37%",
     "unreleased": false
   },
   {
@@ -700,7 +700,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Soccer_Galaxy_L.webp",
-    "dropChance": "0.12%",
+    "dropChance": "0.25%",
     "unreleased": false
   },
   {
@@ -711,7 +711,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Soccer_Gold_L.webp",
-    "dropChance": "0.31%",
+    "dropChance": "0.62%",
     "unreleased": false
   },
   {
@@ -722,7 +722,7 @@
     "rarity": "special",
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Soccer_Holofoil_L.webp",
-    "dropChance": "0.05%",
+    "dropChance": "1.23%",
     "unreleased": false
   },
   {
@@ -733,7 +733,7 @@
     "rarity": "epic",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Drifter_ui_L.webp",
-    "dropChance": "6.98%",
+    "dropChance": "6.48%",
     "unreleased": false
   },
   {
@@ -744,7 +744,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Drifter_Candy_ui_L.webp",
-    "dropChance": "0.23%",
+    "dropChance": "0.37%",
     "unreleased": false
   },
   {
@@ -755,7 +755,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Drifter_Galaxy_ui_L.webp",
-    "dropChance": "0.12%",
+    "dropChance": "0.25%",
     "unreleased": false
   },
   {
@@ -766,7 +766,7 @@
     "rarity": "special",
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Drifter_Gem_ui_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.08%",
     "unreleased": true
   },
   {
@@ -777,7 +777,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Drifter_Gold_ui_L.webp",
-    "dropChance": "0.31%",
+    "dropChance": "0.62%",
     "unreleased": false
   },
   {
@@ -788,7 +788,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Air_Candy_L.webp",
-    "dropChance": "0.62%",
+    "dropChance": "0.53%",
     "unreleased": false
   },
   {
@@ -799,7 +799,7 @@
     "rarity": "special",
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_King_Holofoil_ui_L.webp",
-    "dropChance": "0.06%",
+    "dropChance": "1.23%",
     "unreleased": false
   },
   {
@@ -821,7 +821,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Air_Galaxy_L.webp",
-    "dropChance": "0.5%",
+    "dropChance": "0.43%",
     "unreleased": false
   },
   {
@@ -832,7 +832,7 @@
     "rarity": "special",
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Gem_ui_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.37%",
     "unreleased": true
   },
   {
@@ -843,7 +843,7 @@
     "rarity": "special",
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Air_Holo_L.webp",
-    "dropChance": "0.25%",
+    "dropChance": "0.53%",
     "unreleased": false
   },
   {
@@ -854,7 +854,7 @@
     "rarity": "mythic",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_GrimReaper_Default_L.webp",
-    "dropChance": "0.09%",
+    "dropChance": "0.15%",
     "unreleased": false
   },
   {
@@ -865,7 +865,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_GrimReaper_Candy_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.01%",
     "unreleased": false
   },
   {
@@ -876,7 +876,7 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_GrimReaper_Galaxy_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.01%",
     "unreleased": false
   },
   {
@@ -887,7 +887,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_GrimReaper_Gold_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.01%",
     "unreleased": false
   },
   {
@@ -898,18 +898,7 @@
     "rarity": "special",
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Gem_ui_L.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 83,
-    "slug": "83-cube-water-sprite",
-    "name": "Cube Water",
-    "parent": "Water",
-    "rarity": "special",
-    "variant": "cube",
-    "image": "/sprites/tmp_water_cube.webp",
-    "dropChance": "0%",
+    "dropChance": "0.00001%",
     "unreleased": true
   },
   {
@@ -919,20 +908,9 @@
     "parent": "Water",
     "rarity": "special",
     "variant": "quack",
-    "image": "/sprites/tmp_water_quack.webp",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Quack_ui_L.webp",
     "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 85,
-    "slug": "85-holofoil-earth-sprite",
-    "name": "Holofoil Earth",
-    "parent": "Earth",
-    "rarity": "special",
-    "variant": "holofoil",
-    "image": "/sprites/tmp_earth_holofoil.webp",
-    "dropChance": "0%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 86,
@@ -942,7 +920,7 @@
     "rarity": "special",
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Cube_ui_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.21%",
     "unreleased": false
   },
   {
@@ -952,20 +930,9 @@
     "parent": "Earth",
     "rarity": "special",
     "variant": "quack",
-    "image": "/sprites/tmp_earth_quack.webp",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Quack_ui_L.webp",
     "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 88,
-    "slug": "88-gem-fire-sprite",
-    "name": "Gem Fire",
-    "parent": "Spitfire",
-    "rarity": "special",
-    "variant": "gem",
-    "image": "/sprites/tmp_fire_gem.webp",
-    "dropChance": "0%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 89,
@@ -975,7 +942,7 @@
     "rarity": "special",
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fire_Cube_ui_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.21%",
     "unreleased": false
   },
   {
@@ -985,97 +952,9 @@
     "parent": "Spitfire",
     "rarity": "special",
     "variant": "quack",
-    "image": "/sprites/tmp_fire_quack.webp",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Fire_Quack_ui_L.webp",
     "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 91,
-    "slug": "91-holofoil-duck-sprite",
-    "name": "Holofoil Duck",
-    "parent": "Duck",
-    "rarity": "special",
-    "variant": "holofoil",
-    "image": "/sprites/tmp_duck_holofoil.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 92,
-    "slug": "92-cube-duck-sprite",
-    "name": "Cube Duck",
-    "parent": "Duck",
-    "rarity": "special",
-    "variant": "cube",
-    "image": "/sprites/tmp_duck_cube.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 93,
-    "slug": "93-quack-duck-sprite",
-    "name": "Quack Duck",
-    "parent": "Duck",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_duck_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 94,
-    "slug": "94-gem-ghost-sprite",
-    "name": "Gem Ghost",
-    "parent": "Ghost",
-    "rarity": "special",
-    "variant": "gem",
-    "image": "/sprites/tmp_ghost_gem.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 95,
-    "slug": "95-cube-ghost-sprite",
-    "name": "Cube Ghost",
-    "parent": "Ghost",
-    "rarity": "special",
-    "variant": "cube",
-    "image": "/sprites/tmp_ghost_cube.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 96,
-    "slug": "96-quack-ghost-sprite",
-    "name": "Quack Ghost",
-    "parent": "Ghost",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_ghost_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 97,
-    "slug": "97-gem-dream-sprite",
-    "name": "Gem Dream",
-    "parent": "Sleepy",
-    "rarity": "special",
-    "variant": "gem",
-    "image": "/sprites/tmp_sleepy_gem.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 98,
-    "slug": "98-holofoil-dream-sprite",
-    "name": "Holofoil Dream",
-    "parent": "Sleepy",
-    "rarity": "special",
-    "variant": "holofoil",
-    "image": "/sprites/tmp_sleepy_holofoil.webp",
-    "dropChance": "0%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 99,
@@ -1085,52 +964,8 @@
     "rarity": "special",
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Sleepy_Cube_ui_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.04%",
     "unreleased": false
-  },
-  {
-    "id": 100,
-    "slug": "100-quack-dream-sprite",
-    "name": "Quack Dream",
-    "parent": "Sleepy",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_sleepy_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 101,
-    "slug": "101-holofoil-demon-sprite",
-    "name": "Holofoil Demon",
-    "parent": "Demon",
-    "rarity": "special",
-    "variant": "holofoil",
-    "image": "/sprites/tmp_demon_holofoil.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 102,
-    "slug": "102-cube-demon-sprite",
-    "name": "Cube Demon",
-    "parent": "Demon",
-    "rarity": "special",
-    "variant": "cube",
-    "image": "/sprites/tmp_demon_cube.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 103,
-    "slug": "103-quack-demon-sprite",
-    "name": "Quack Demon",
-    "parent": "Demon",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_demon_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
   },
   {
     "id": 104,
@@ -1139,18 +974,7 @@
     "parent": "Punk",
     "rarity": "special",
     "variant": "gem",
-    "image": "/sprites/tmp_punk_gem.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 105,
-    "slug": "105-holofoil-punk-sprite",
-    "name": "Holofoil Punk",
-    "parent": "Punk",
-    "rarity": "special",
-    "variant": "holofoil",
-    "image": "/sprites/tmp_punk_holofoil.webp",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Punk_Gem_ui_L.webp",
     "dropChance": "0%",
     "unreleased": true
   },
@@ -1162,52 +986,8 @@
     "rarity": "special",
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Punk_Cube_ui_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.04%",
     "unreleased": false
-  },
-  {
-    "id": 107,
-    "slug": "107-quack-punk-sprite",
-    "name": "Quack Punk",
-    "parent": "Punk",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_punk_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 108,
-    "slug": "108-gem-king-sprite",
-    "name": "Gem King",
-    "parent": "King",
-    "rarity": "special",
-    "variant": "gem",
-    "image": "/sprites/tmp_king_gem.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 109,
-    "slug": "109-cube-king-sprite",
-    "name": "Cube King",
-    "parent": "King",
-    "rarity": "special",
-    "variant": "cube",
-    "image": "/sprites/tmp_king_cube.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 110,
-    "slug": "110-quack-king-sprite",
-    "name": "Quack King",
-    "parent": "King",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_king_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
   },
   {
     "id": 111,
@@ -1216,9 +996,9 @@
     "parent": "ZeroPoint",
     "rarity": "special",
     "variant": "holofoil",
-    "image": "/sprites/tmp_zero_point_holofoil.webp",
-    "dropChance": "0%",
-    "unreleased": true
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Holofoil_ui_L.webp",
+    "dropChance": "0.00028%",
+    "unreleased": false
   },
   {
     "id": 112,
@@ -1227,9 +1007,9 @@
     "parent": "ZeroPoint",
     "rarity": "special",
     "variant": "cube",
-    "image": "/sprites/tmp_zero_point_cube.webp",
-    "dropChance": "0%",
-    "unreleased": true
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Cube_ui_L.webp",
+    "dropChance": "0.000014%",
+    "unreleased": false
   },
   {
     "id": 113,
@@ -1240,29 +1020,7 @@
     "variant": "quack",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Quack_ui_L.webp",
     "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 114,
-    "slug": "114-gem-fishy-sprite",
-    "name": "Gem Fishy",
-    "parent": "Fishy",
-    "rarity": "special",
-    "variant": "gem",
-    "image": "/sprites/tmp_fishy_gem.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 115,
-    "slug": "115-holofoil-fishy-sprite",
-    "name": "Holofoil Fishy",
-    "parent": "Fishy",
-    "rarity": "special",
-    "variant": "holofoil",
-    "image": "/sprites/tmp_fishy_holofoil.webp",
-    "dropChance": "0%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 116,
@@ -1272,107 +1030,8 @@
     "rarity": "special",
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fishy_Cube_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.21%",
     "unreleased": false
-  },
-  {
-    "id": 117,
-    "slug": "117-quack-fishy-sprite",
-    "name": "Quack Fishy",
-    "parent": "Fishy",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_fishy_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 118,
-    "slug": "118-gem-striker-sprite",
-    "name": "Gem Striker",
-    "parent": "Soccer",
-    "rarity": "special",
-    "variant": "gem",
-    "image": "/sprites/tmp_soccer_gem.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 119,
-    "slug": "119-cube-striker-sprite",
-    "name": "Cube Striker",
-    "parent": "Soccer",
-    "rarity": "special",
-    "variant": "cube",
-    "image": "/sprites/tmp_soccer_cube.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 120,
-    "slug": "120-quack-striker-sprite",
-    "name": "Quack Striker",
-    "parent": "Soccer",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_soccer_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 121,
-    "slug": "121-holofoil-aura-sprite",
-    "name": "Holofoil Aura",
-    "parent": "Drifter",
-    "rarity": "special",
-    "variant": "holofoil",
-    "image": "/sprites/tmp_drifter_holofoil.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 122,
-    "slug": "122-cube-aura-sprite",
-    "name": "Cube Aura",
-    "parent": "Drifter",
-    "rarity": "special",
-    "variant": "cube",
-    "image": "/sprites/tmp_drifter_cube.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 123,
-    "slug": "123-quack-aura-sprite",
-    "name": "Quack Aura",
-    "parent": "Drifter",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_drifter_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 124,
-    "slug": "124-gem-boss-sprite",
-    "name": "Gem Boss",
-    "parent": "Boss",
-    "rarity": "special",
-    "variant": "gem",
-    "image": "/sprites/tmp_boss_gem.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 125,
-    "slug": "125-holofoil-boss-sprite",
-    "name": "Holofoil Boss",
-    "parent": "Boss",
-    "rarity": "special",
-    "variant": "holofoil",
-    "image": "/sprites/tmp_boss_holofoil.webp",
-    "dropChance": "0%",
-    "unreleased": true
   },
   {
     "id": 126,
@@ -1382,19 +1041,8 @@
     "rarity": "special",
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Boss_Cube_ui_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.04%",
     "unreleased": false
-  },
-  {
-    "id": 127,
-    "slug": "127-quack-boss-sprite",
-    "name": "Quack Boss",
-    "parent": "Boss",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_boss_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
   },
   {
     "id": 128,
@@ -1403,8 +1051,8 @@
     "parent": "Grim",
     "rarity": "special",
     "variant": "gem",
-    "image": "/sprites/tmp_grim_gem.webp",
-    "dropChance": "0%",
+    "image": "/sprites/T_Icon_BR_GrimReaper_Gem_L.webp",
+    "dropChance": "0.00099%",
     "unreleased": true
   },
   {
@@ -1414,9 +1062,9 @@
     "parent": "Grim",
     "rarity": "special",
     "variant": "holofoil",
-    "image": "/sprites/tmp_grim_holofoil.webp",
+    "image": "/sprites/T_Icon_BR_GrimReaper_Holofoil_L.webp",
     "dropChance": "0%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 130,
@@ -1430,92 +1078,15 @@
     "unreleased": false
   },
   {
-    "id": 131,
-    "slug": "131-quack-grim-sprite",
-    "name": "Quack Grim",
-    "parent": "Grim",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_grim_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 132,
-    "slug": "132-gem-air-sprite",
-    "name": "Gem Air",
-    "parent": "Air",
-    "rarity": "special",
-    "variant": "gem",
-    "image": "/sprites/tmp_air_gem.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 133,
-    "slug": "133-cube-air-sprite",
-    "name": "Cube Air",
-    "parent": "Air",
-    "rarity": "special",
-    "variant": "cube",
-    "image": "/sprites/tmp_air_cube.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 134,
-    "slug": "134-quack-air-sprite",
-    "name": "Quack Air",
-    "parent": "Air",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_air_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 135,
-    "slug": "135-gem-seven-sprite",
-    "name": "Gem Seven",
-    "parent": "Seven",
-    "rarity": "special",
-    "variant": "gem",
-    "image": "/sprites/tmp_seven_gem.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 136,
-    "slug": "136-cube-seven-sprite",
-    "name": "Cube Seven",
-    "parent": "Seven",
-    "rarity": "special",
-    "variant": "cube",
-    "image": "/sprites/tmp_seven_cube.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
-    "id": 137,
-    "slug": "137-quack-seven-sprite",
-    "name": "Quack Seven",
-    "parent": "Seven",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_seven_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
-  },
-  {
     "id": 138,
     "slug": "138-john-wick-sprite",
     "name": "John Wick",
-    "parent": "John Wick",
+    "parent": "FillerGrunt",
     "rarity": "mythic",
     "variant": "base",
-    "image": "/sprites/tmp_john_wick.webp",
+    "image": "/sprites/T_Icon_Reload_FillerGrunt_icon_L.webp",
     "dropChance": "0%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 139,
@@ -1525,7 +1096,7 @@
     "rarity": "mythic",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_FossilMeal_Default_L.webp",
-    "dropChance": "2.23%",
+    "dropChance": "1.44%",
     "unreleased": false
   },
   {
@@ -1536,7 +1107,7 @@
     "rarity": "special",
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_FossilMeal_Gold_L.webp",
-    "dropChance": "0.1%",
+    "dropChance": "0.17%",
     "unreleased": false
   },
   {
@@ -1547,7 +1118,7 @@
     "rarity": "special",
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_FossilMeal_Candy_L.webp",
-    "dropChance": "0.07%",
+    "dropChance": "0.1%",
     "unreleased": false
   },
   {
@@ -1558,19 +1129,8 @@
     "rarity": "special",
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_FossilMeal_Galaxy_L.webp",
-    "dropChance": "0.04%",
+    "dropChance": "0.07%",
     "unreleased": false
-  },
-  {
-    "id": 143,
-    "slug": "143-gem-batman-sprite",
-    "name": "Gem Batman",
-    "parent": "Batman",
-    "rarity": "special",
-    "variant": "gem",
-    "image": "/sprites/tmp_batman_gem.webp",
-    "dropChance": "0%",
-    "unreleased": true
   },
   {
     "id": 145,
@@ -1580,7 +1140,7 @@
     "rarity": "special",
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_FossilMeal_Holofoil_L.webp",
-    "dropChance": "0.01%",
+    "dropChance": "0.34%",
     "unreleased": false
   },
   {
@@ -1591,19 +1151,8 @@
     "rarity": "special",
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_FossilMeal_Cube_L.webp",
-    "dropChance": "0%",
+    "dropChance": "0.02%",
     "unreleased": false
-  },
-  {
-    "id": 147,
-    "slug": "147-quack-batman-sprite",
-    "name": "Quack Batman",
-    "parent": "Batman",
-    "rarity": "special",
-    "variant": "quack",
-    "image": "/sprites/tmp_batman_quack.webp",
-    "dropChance": "0%",
-    "unreleased": true
   },
   {
     "id": 148,
@@ -1613,7 +1162,7 @@
     "rarity": "mythic",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_CompanyStargazer_Default_L.webp",
-    "dropChance": "0%",
+    "dropChance": "2.14%",
     "unreleased": false
   },
   {
@@ -1624,7 +1173,128 @@
     "rarity": "mythic",
     "variant": "base",
     "image": "/sprites/T_Icon_BR_CokeParmesan_Default_L.webp",
+    "dropChance": "2.14%",
+    "unreleased": false
+  },
+  {
+    "id": 150,
+    "slug": "150-ironmouse-sprite",
+    "name": "Ironmouse",
+    "parent": "PedicureAntacid",
+    "rarity": "mythic",
+    "variant": "base",
+    "image": "/sprites/T_Icon_BR_PedicureAntacid_L.webp",
+    "dropChance": "2.14%",
+    "unreleased": true
+  },
+  {
+    "id": 151,
+    "slug": "151-llama-sprite",
+    "name": "Llama",
+    "parent": "Llama",
+    "rarity": "legendary",
+    "variant": "base",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Llama_ui_L.webp",
+    "dropChance": "4.45%",
+    "unreleased": false
+  },
+  {
+    "id": 152,
+    "slug": "152-gold-llama-sprite",
+    "name": "Gold Llama",
+    "parent": "Llama",
+    "rarity": "special",
+    "variant": "gold",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Llama_Gold_ui_L.webp",
+    "dropChance": "0.43%",
+    "unreleased": false
+  },
+  {
+    "id": 153,
+    "slug": "153-gummy-llama-sprite",
+    "name": "Gummy Llama",
+    "parent": "Llama",
+    "rarity": "special",
+    "variant": "candy",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Llama_Candy_ui_L.webp",
+    "dropChance": "0.26%",
+    "unreleased": false
+  },
+  {
+    "id": 154,
+    "slug": "154-galaxy-llama-sprite",
+    "name": "Galaxy Llama",
+    "parent": "Llama",
+    "rarity": "special",
+    "variant": "galaxy",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Llama_Galaxy_ui_L.webp",
+    "dropChance": "0.17%",
+    "unreleased": false
+  },
+  {
+    "id": 155,
+    "slug": "155-gem-llama-sprite",
+    "name": "Gem Llama",
+    "parent": "Llama",
+    "rarity": "special",
+    "variant": "gem",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Llama_Gem_ui_L.webp",
     "dropChance": "0%",
+    "unreleased": false
+  },
+  {
+    "id": 156,
+    "slug": "156-peely-sprite",
+    "name": "Peely",
+    "parent": "Peely",
+    "rarity": "legendary",
+    "variant": "base",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Peely_ui_L.webp",
+    "dropChance": "4.62%",
+    "unreleased": false
+  },
+  {
+    "id": 157,
+    "slug": "157-gold-peely-sprite",
+    "name": "Gold Peely",
+    "parent": "Peely",
+    "rarity": "special",
+    "variant": "gold",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Peely_Gold_ui_L.webp",
+    "dropChance": "0.43%",
+    "unreleased": false
+  },
+  {
+    "id": 158,
+    "slug": "158-gummy-peely-sprite",
+    "name": "Gummy Peely",
+    "parent": "Peely",
+    "rarity": "special",
+    "variant": "candy",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Peely_Candy_ui_L.webp",
+    "dropChance": "0.26%",
+    "unreleased": false
+  },
+  {
+    "id": 159,
+    "slug": "159-galaxy-peely-sprite",
+    "name": "Galaxy Peely",
+    "parent": "Peely",
+    "rarity": "special",
+    "variant": "galaxy",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Peely_Galaxy_ui_L.webp",
+    "dropChance": "0.17%",
+    "unreleased": false
+  },
+  {
+    "id": 160,
+    "slug": "160-holofoil-peely-sprite",
+    "name": "Holofoil Peely",
+    "parent": "Peely",
+    "rarity": "special",
+    "variant": "holofoil",
+    "image": "/sprites/T_Icon_BR_Creature_Sprite_Peely_Holofoil_ui_L.webp",
+    "dropChance": "0.85%",
     "unreleased": false
   }
 ]
