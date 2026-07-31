@@ -19,6 +19,7 @@ import { SpriteDetailDialog } from "@/components/SpriteDetailDialog"
 import { Button } from "@/components/ui/button"
 import { sprites } from "@/data/sprites"
 import type { Rarity, Sprite, Variant } from "@/data/types"
+import { vibrate } from "@/lib/haptics"
 import { cn } from "@/lib/utils"
 import { useCollectionStore } from "@/store/useCollectionStore"
 
@@ -40,6 +41,7 @@ export function App() {
     if (owned[sprite.id]) {
       setPendingRemove(sprite)
     } else {
+      vibrate()
       toggleOwned(sprite.id)
       setActiveSprite(null)
     }
@@ -177,7 +179,10 @@ export function App() {
             <AlertDialogAction
               className="h-11 text-base"
               onClick={() => {
-                if (pendingRemove) toggleOwned(pendingRemove.id)
+                if (pendingRemove) {
+                  vibrate()
+                  toggleOwned(pendingRemove.id)
+                }
                 setPendingRemove(null)
               }}
             >
