@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react"
+import { BarChart3Icon } from "lucide-react"
 
 import {
   AlertDialog,
@@ -10,12 +11,15 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
+import { CollectionProgress } from "@/components/CollectionProgress"
 import { Filters } from "@/components/Filters"
 import { InstallPrompt } from "@/components/InstallPrompt"
 import { SpriteCard } from "@/components/SpriteCard"
 import { SpriteDetailDialog } from "@/components/SpriteDetailDialog"
+import { Button } from "@/components/ui/button"
 import { sprites } from "@/data/sprites"
 import type { Rarity, Sprite, Variant } from "@/data/types"
+import { cn } from "@/lib/utils"
 import { useCollectionStore } from "@/store/useCollectionStore"
 
 export function App() {
@@ -27,6 +31,7 @@ export function App() {
   const [showUnreleased, setShowUnreleased] = useState(false)
   const [activeSprite, setActiveSprite] = useState<Sprite | null>(null)
   const [pendingRemove, setPendingRemove] = useState<Sprite | null>(null)
+  const [progressOpen, setProgressOpen] = useState(false)
 
   const owned = useCollectionStore((s) => s.owned)
   const toggleOwned = useCollectionStore((s) => s.toggleOwned)
@@ -72,15 +77,41 @@ export function App() {
       <div className="sticky top-0 z-10 bg-background/95 px-4 pt-[calc(env(safe-area-inset-top)+0.75rem)] pb-3 backdrop-blur-sm">
         <header className="mb-3 flex items-center justify-between gap-3">
           <h1 className="font-heading text-lg font-semibold">Sprites</h1>
-          <p className="text-sm">
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            className="rounded-full"
+            onClick={() => setProgressOpen(true)}
+          >
+            <BarChart3Icon />
             <span className="font-semibold text-emerald-600 dark:text-emerald-400">
               {ownedCount}
-            </span>{" "}
+            </span>
             <span className="text-muted-foreground">
               / {releasedTotal} owned
             </span>
-          </p>
+          </Button>
         </header>
+
+        <div
+          role="progressbar"
+          aria-valuenow={ownedCount}
+          aria-valuemin={0}
+          aria-valuemax={releasedTotal}
+          aria-label="Overall collection progress"
+          className="mb-3 h-1.5 w-full overflow-hidden rounded-full bg-muted"
+        >
+          <div
+            className={cn(
+              "h-full rounded-full transition-[width]",
+              ownedCount === releasedTotal ? "bg-emerald-500" : "bg-primary"
+            )}
+            style={{
+              width: `${releasedTotal === 0 ? 0 : (ownedCount / releasedTotal) * 100}%`,
+            }}
+          />
+        </div>
 
         <Filters
           query={query}
@@ -155,6 +186,8 @@ export function App() {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
+
+      <CollectionProgress open={progressOpen} onOpenChange={setProgressOpen} />
 
       <InstallPrompt />
     </div>
