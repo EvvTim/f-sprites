@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import { BarChart3Icon } from "lucide-react"
 
 import {
@@ -19,6 +19,7 @@ import { SpriteDetailDialog } from "@/components/SpriteDetailDialog"
 import { Button } from "@/components/ui/button"
 import { sprites } from "@/data/sprites"
 import type { Rarity, Sprite, Variant } from "@/data/types"
+import { updateAppBadge } from "@/lib/badge"
 import { vibrate } from "@/lib/haptics"
 import { cn } from "@/lib/utils"
 import { useCollectionStore } from "@/store/useCollectionStore"
@@ -55,6 +56,10 @@ export function App() {
     () => sprites.filter((s) => !s.unreleased && owned[s.id]).length,
     [owned]
   )
+
+  useEffect(() => {
+    updateAppBadge(releasedTotal - ownedCount)
+  }, [releasedTotal, ownedCount])
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
