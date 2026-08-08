@@ -78,6 +78,16 @@ function SheetContent({
     if (!drag || !popup) return
     const deltaY = e.clientY - drag.startY
 
+    // While already at the scroll top, a downward move can only be our
+    // dismiss gesture or the browser's native rubber-band bounce - never a
+    // legitimate further scroll - so claim it from the first pixel. Waiting
+    // for the drag threshold below to call preventDefault is too late: on
+    // touch devices the browser commits to its own pan/bounce on the very
+    // first move of the gesture, before JS runs, and won't hand it back.
+    if (deltaY > 0 && popup.scrollTop <= 0) {
+      e.preventDefault()
+    }
+
     if (!drag.dragging) {
       if (deltaY <= 8 || popup.scrollTop > 0) return
       drag.dragging = true
@@ -86,7 +96,6 @@ function SheetContent({
     }
 
     popup.style.transform = `translateY(${Math.max(0, deltaY)}px)`
-    e.preventDefault()
   }
 
   const handlePointerEnd = (e: React.PointerEvent<HTMLDivElement>) => {
@@ -134,7 +143,7 @@ function SheetContent({
         {swipeToDismiss && (
           <div
             aria-hidden
-            className="sticky top-0 z-10 -mb-4 flex justify-center bg-inherit pt-2 pb-3"
+            className="sticky top-0 z-10 -mb-4 touch-none flex justify-center bg-inherit pt-3 pb-3"
           >
             <div className="h-1.5 w-10 rounded-full bg-muted-foreground/25" />
           </div>
@@ -173,7 +182,10 @@ function SheetHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="sheet-header"
-      className={cn("flex flex-col gap-0.5 p-4", className)}
+      // touch-none extends the swipe-to-dismiss drag zone (see SheetContent)
+      // over the title area too - safe here since headers only ever hold a
+      // title/description, never interactive content that'd need native touch handling.
+      className={cn("flex touch-none flex-col gap-0.5 p-4", className)}
       {...props}
     />
   )
