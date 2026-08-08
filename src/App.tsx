@@ -177,6 +177,7 @@ export function App() {
                 sprite={sprite}
                 owned={Boolean(owned[sprite.id])}
                 onOpen={() => setActiveSprite(sprite)}
+                onToggleOwned={() => handleToggleOwned(sprite)}
               />
             ))}
           </ul>

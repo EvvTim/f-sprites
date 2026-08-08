@@ -1,3 +1,4 @@
+import { useRef, useState, type PointerEvent as ReactPointerEvent } from "react"
 import { CheckIcon } from "lucide-react"
 
 import {
@@ -15,9 +16,65 @@ type SpriteCardProps = {
   sprite: Sprite
   owned: boolean
   onOpen: () => void
+  onToggleOwned: () => void
 }
 
-export function SpriteCard({ sprite, owned, onOpen }: SpriteCardProps) {
+const LONG_PRESS_MS = 450
+const LONG_PRESS_MOVE_TOLERANCE_PX = 10
+
+export function SpriteCard({
+  sprite,
+  owned,
+  onOpen,
+  onToggleOwned,
+}: SpriteCardProps) {
+  const [pressing, setPressing] = useState(false)
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const originRef = useRef<{ x: number; y: number } | null>(null)
+  const longPressFiredRef = useRef(false)
+
+  const cancelPress = () => {
+    if (timerRef.current) {
+      clearTimeout(timerRef.current)
+      timerRef.current = null
+    }
+    originRef.current = null
+    setPressing(false)
+  }
+
+  const handlePointerDown = (e: ReactPointerEvent) => {
+    if (e.pointerType === "mouse" && e.button !== 0) return
+    originRef.current = { x: e.clientX, y: e.clientY }
+    longPressFiredRef.current = false
+    setPressing(true)
+    timerRef.current = setTimeout(() => {
+      longPressFiredRef.current = true
+      setPressing(false)
+      haptics.tap()
+      onToggleOwned()
+    }, LONG_PRESS_MS)
+  }
+
+  const handlePointerMove = (e: ReactPointerEvent) => {
+    const origin = originRef.current
+    if (!origin) return
+    if (
+      Math.abs(e.clientX - origin.x) > LONG_PRESS_MOVE_TOLERANCE_PX ||
+      Math.abs(e.clientY - origin.y) > LONG_PRESS_MOVE_TOLERANCE_PX
+    ) {
+      cancelPress()
+    }
+  }
+
+  const handleClick = () => {
+    if (longPressFiredRef.current) {
+      longPressFiredRef.current = false
+      return
+    }
+    haptics.tap()
+    onOpen()
+  }
+
   return (
     <li
       className={cn(
@@ -28,17 +85,21 @@ export function SpriteCard({ sprite, owned, onOpen }: SpriteCardProps) {
     >
       <button
         type="button"
-        onClick={() => {
-          haptics.tap()
-          onOpen()
-        }}
-        className="flex flex-1 flex-col items-center gap-1.5 p-2.5 text-left outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+        onClick={handleClick}
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={cancelPress}
+        onPointerCancel={cancelPress}
+        onPointerLeave={cancelPress}
+        onContextMenu={(e) => e.preventDefault()}
+        className="flex flex-1 flex-col items-center gap-1.5 p-2.5 text-left outline-none [-webkit-touch-callout:none] select-none focus-visible:ring-2 focus-visible:ring-ring/50"
       >
         <div
           className={cn(
-            "relative flex aspect-square w-full items-center justify-center rounded-lg bg-muted/50",
+            "relative flex aspect-square w-full items-center justify-center rounded-lg bg-muted/50 transition-transform duration-150",
             sprite.unreleased && "opacity-50 grayscale",
-            !owned && !sprite.unreleased && "opacity-80"
+            !owned && !sprite.unreleased && "opacity-80",
+            pressing && "scale-[0.94]"
           )}
           style={spriteBackgroundStyle(sprite)}
         >
