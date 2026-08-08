@@ -14,6 +14,7 @@ import {
   VARIANT_LABELS,
   getSpriteImage,
   sortByVariant,
+  spriteBackgroundStyle,
   sprites,
 } from "@/data/sprites"
 import type { Sprite } from "@/data/types"
@@ -60,6 +61,7 @@ export function SpriteDetailDialog({
                   "flex aspect-square w-40 items-center justify-center rounded-xl bg-muted/50",
                   sprite.unreleased && "opacity-50 grayscale"
                 )}
+                style={spriteBackgroundStyle(sprite)}
               >
                 <img
                   src={getSpriteImage(sprite)}
@@ -170,6 +172,7 @@ function SiblingThumb({
             owned && "ring-emerald-500",
             sibling.unreleased && "opacity-50 grayscale"
           )}
+          style={spriteBackgroundStyle(sibling)}
         >
           <img
             src={getSpriteImage(sibling)}

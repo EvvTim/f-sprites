@@ -1,6 +1,11 @@
 import { CheckIcon } from "lucide-react"
 
-import { RARITY_COLORS, VARIANT_LABELS, getSpriteImage } from "@/data/sprites"
+import {
+  RARITY_COLORS,
+  VARIANT_LABELS,
+  getSpriteImage,
+  spriteBackgroundStyle,
+} from "@/data/sprites"
 import type { Sprite } from "@/data/types"
 import { haptics } from "@/lib/haptics"
 import { cn } from "@/lib/utils"
@@ -35,6 +40,7 @@ export function SpriteCard({ sprite, owned, onOpen }: SpriteCardProps) {
             sprite.unreleased && "opacity-50 grayscale",
             !owned && !sprite.unreleased && "opacity-80"
           )}
+          style={spriteBackgroundStyle(sprite)}
         >
           <img
             src={getSpriteImage(sprite)}

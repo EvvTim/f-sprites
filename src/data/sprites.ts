@@ -1,3 +1,5 @@
+import type { CSSProperties } from "react"
+
 import raw from "./sprites.json"
 import type { Rarity, Sprite, Variant } from "./types"
 
@@ -79,4 +81,34 @@ export const VARIANT_COLORS: Record<Variant, string> = {
 
 export function sortByVariant(a: Sprite, b: Sprite) {
   return VARIANT_ORDER.indexOf(a.variant) - VARIANT_ORDER.indexOf(b.variant)
+}
+
+// Matches the accent colors fortnite.gg itself uses per rarity/variant, so
+// each sprite's card glow feels "in tone" with how the game presents it.
+const SPRITE_TONE: Record<Rarity | Variant, { top: string; border: string }> = {
+  rare: { top: "#104273", border: "#00afff" },
+  epic: { top: "#4d1566", border: "#ce59ff" },
+  legendary: { top: "#743e0a", border: "#de6e0e" },
+  mythic: { top: "#a89442", border: "#f1e198" },
+  special: { top: "#4d1566", border: "#ce59ff" },
+  base: { top: "#104273", border: "#00afff" },
+  gold: { top: "#9d752a", border: "#f5b642" },
+  candy: { top: "#9f4540", border: "#f16f68" },
+  galaxy: { top: "#463b9e", border: "#6d5df7" },
+  gem: { top: "#7098a3", border: "#c9e7f2" },
+  holofoil: { top: "#a1428e", border: "#f07ad8" },
+  cube: { top: "#730974", border: "#8b008b" },
+  quack: { top: "#6941a2", border: "#a66bff" },
+}
+
+export function getSpriteTone(sprite: Sprite) {
+  return SPRITE_TONE[sprite.variant === "base" ? sprite.rarity : sprite.variant]
+}
+
+export function spriteBackgroundStyle(sprite: Sprite): CSSProperties {
+  const { top, border } = getSpriteTone(sprite)
+  return {
+    backgroundImage: `radial-gradient(circle at 50% 30%, ${top}66 0%, ${top}26 55%, transparent 80%)`,
+    boxShadow: `inset 0 -2px 0 0 ${border}55`,
+  }
 }
