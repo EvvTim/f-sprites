@@ -110,13 +110,14 @@ export function spriteCardStyle(sprite: Sprite, owned: boolean): CSSProperties {
 }
 
 // The game's accent colors are tuned for a dark UI; several (mythic, gem)
-// are too pale for readable text on a light card. Darken for text use only
-// so badges stay legible in both themes without branching on color scheme.
-function darkenForText(hex: string): string {
+// are too pale to use directly against light backgrounds or under white
+// text. Darken for those uses only, so the tinted surfaces stay legible in
+// both themes without branching on color scheme.
+function darken(hex: string, factor: number): string {
   const n = parseInt(hex.slice(1), 16)
-  const r = Math.round(((n >> 16) & 255) * 0.7)
-  const g = Math.round(((n >> 8) & 255) * 0.7)
-  const b = Math.round((n & 255) * 0.7)
+  const r = Math.round(((n >> 16) & 255) * factor)
+  const g = Math.round(((n >> 8) & 255) * factor)
+  const b = Math.round((n & 255) * factor)
   return `rgb(${r}, ${g}, ${b})`
 }
 
@@ -124,5 +125,11 @@ function darkenForText(hex: string): string {
  * color as text over a matching low-alpha tint background. */
 export function toneBadgeStyle(key: Rarity | Variant): CSSProperties {
   const { border } = SPRITE_TONE[key]
-  return { backgroundColor: `${border}26`, color: darkenForText(border) }
+  return { backgroundColor: `${border}26`, color: darken(border, 0.7) }
+}
+
+/** A solid, always-dark-enough version of the tone accent - for filled
+ * shapes (e.g. stepper dots) that need legible white text/icons on top. */
+export function toneSolidColor(sprite: Sprite): string {
+  return darken(getSpriteTone(sprite).border, 0.55)
 }

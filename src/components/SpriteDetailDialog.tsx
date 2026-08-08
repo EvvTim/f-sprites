@@ -1,4 +1,13 @@
-import { CheckIcon } from "lucide-react"
+import type { ComponentType, ReactNode } from "react"
+import {
+  CheckIcon,
+  CoinsIcon,
+  DicesIcon,
+  InfoIcon,
+  MapPinIcon,
+  UsersIcon,
+  ZapIcon,
+} from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -15,6 +24,7 @@ import {
   spriteBackgroundStyle,
   sprites,
   toneBadgeStyle,
+  toneSolidColor,
 } from "@/data/sprites"
 import type { Sprite } from "@/data/types"
 import { haptics } from "@/lib/haptics"
@@ -26,6 +36,107 @@ type SpriteDetailDialogProps = {
   onOpenChange: (open: boolean) => void
   onSelect: (sprite: Sprite) => void
   onToggleOwned: (sprite: Sprite) => void
+}
+
+const FACT_ICONS: Record<string, ComponentType<{ className?: string }>> = {
+  Location: MapPinIcon,
+  "Summon Cost": CoinsIcon,
+}
+
+function SectionLabel({
+  icon: Icon,
+  children,
+}: {
+  icon: ComponentType<{ className?: string }>
+  children: ReactNode
+}) {
+  return (
+    <p className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
+      <Icon className="size-3.5" />
+      {children}
+    </p>
+  )
+}
+
+// Matches lines like "Required damage decreases at each Level Up: 150
+// Damage -> 125 Damage -> 100 Damage -> 75 Damage -> 50 Damage to trigger" -
+// scraped verbatim from fortnite.gg's own per-level scaling copy.
+function parseLevelUpSteps(line: string): { intro: string; steps: string[] } | null {
+  const match = line.match(/^(.*Level Up)\s*:\s*(.+)$/i)
+  if (!match) return null
+  const steps = match[2]
+    .split(/\s*->\s*/)
+    .map((s) => s.trim())
+    .filter(Boolean)
+  if (steps.length < 2) return null
+  return { intro: match[1].trim(), steps }
+}
+
+function LevelSteps({
+  intro,
+  steps,
+  color,
+}: {
+  intro: string
+  steps: string[]
+  color: string
+}) {
+  return (
+    <div className="w-full">
+      <p className="mb-2 text-xs text-muted-foreground">{intro}</p>
+      <ol className="w-full">
+        {steps.map((step, i) => (
+          <li key={i} className="relative flex gap-2.5 pb-2.5 last:pb-0">
+            {i < steps.length - 1 && (
+              <span
+                aria-hidden
+                className="absolute top-[18px] left-[8.5px] w-px"
+                style={{
+                  height: "calc(100% - 1rem)",
+                  backgroundColor: `color-mix(in srgb, ${color} 30%, transparent)`,
+                }}
+              />
+            )}
+            <span
+              className="relative z-10 mt-px flex size-[17px] shrink-0 items-center justify-center rounded-full text-[9px] font-bold text-white"
+              style={{ backgroundColor: color }}
+            >
+              {i + 1}
+            </span>
+            <span className="text-xs leading-[17px] font-medium">{step}</span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  )
+}
+
+function FactList({
+  facts,
+  icons = true,
+}: {
+  facts: { label: string; value: string }[]
+  icons?: boolean
+}) {
+  return (
+    <ul className="w-full divide-y divide-border rounded-lg border text-sm">
+      {facts.map((fact) => {
+        const Icon = FACT_ICONS[fact.label] ?? InfoIcon
+        return (
+          <li
+            key={fact.label}
+            className="flex items-center justify-between gap-3 px-3 py-2.5"
+          >
+            <span className="flex items-center gap-2 text-muted-foreground">
+              {icons && <Icon className="size-4 shrink-0" />}
+              {fact.label}
+            </span>
+            <span className="font-medium">{fact.value}</span>
+          </li>
+        )
+      })}
+    </ul>
+  )
 }
 
 export function SpriteDetailDialog({
@@ -99,9 +210,10 @@ export function SpriteDetailDialog({
 
               {sprite.squadBonus && (
                 <p
-                  className="w-full rounded-lg px-3 py-2 text-center text-xs font-medium"
+                  className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-left text-xs font-medium"
                   style={toneBadgeStyle(sprite.rarity)}
                 >
+                  <UsersIcon className="size-4 shrink-0" />
                   {sprite.squadBonus}
                 </p>
               )}
@@ -129,48 +241,45 @@ export function SpriteDetailDialog({
                 )}
               </Button>
 
+              {(!!sprite.effect?.length ||
+                !!sprite.facts?.length ||
+                !!sprite.dropChances?.length) && (
+                <div className="w-full border-t border-border" />
+              )}
+
               {!!sprite.effect?.length && (
-                <div className="w-full space-y-1.5 text-sm text-muted-foreground">
-                  {sprite.effect.map((line, i) => (
-                    <p key={i}>{line}</p>
-                  ))}
+                <div className="w-full space-y-2">
+                  <SectionLabel icon={ZapIcon}>Ability</SectionLabel>
+                  <p className="text-sm font-medium">{sprite.effect[0]}</p>
+                  {sprite.effect.slice(1).map((line, i) => {
+                    const levelUp = parseLevelUpSteps(line)
+                    return levelUp ? (
+                      <LevelSteps
+                        key={i}
+                        intro={levelUp.intro}
+                        steps={levelUp.steps}
+                        color={toneSolidColor(sprite)}
+                      />
+                    ) : (
+                      <p key={i} className="text-xs text-muted-foreground">
+                        {line}
+                      </p>
+                    )
+                  })}
                 </div>
               )}
 
               {!!sprite.facts?.length && (
-                <ul className="w-full divide-y divide-border rounded-lg border text-sm">
-                  {sprite.facts.map((fact) => (
-                    <li
-                      key={fact.label}
-                      className="flex items-center justify-between gap-3 px-3 py-2"
-                    >
-                      <span className="text-muted-foreground">
-                        {fact.label}
-                      </span>
-                      <span className="font-medium">{fact.value}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="w-full space-y-1.5">
+                  <SectionLabel icon={InfoIcon}>Details</SectionLabel>
+                  <FactList facts={sprite.facts} />
+                </div>
               )}
 
               {!!sprite.dropChances?.length && (
-                <div className="w-full">
-                  <p className="mb-1.5 text-xs font-medium text-muted-foreground">
-                    Drop Chances
-                  </p>
-                  <ul className="divide-y divide-border rounded-lg border text-sm">
-                    {sprite.dropChances.map((d) => (
-                      <li
-                        key={d.label}
-                        className="flex items-center justify-between gap-3 px-3 py-2"
-                      >
-                        <span className="text-muted-foreground">
-                          {d.label}
-                        </span>
-                        <span className="font-medium">{d.value}</span>
-                      </li>
-                    ))}
-                  </ul>
+                <div className="w-full space-y-1.5">
+                  <SectionLabel icon={DicesIcon}>Drop Chances</SectionLabel>
+                  <FactList facts={sprite.dropChances} icons={false} />
                 </div>
               )}
             </div>
