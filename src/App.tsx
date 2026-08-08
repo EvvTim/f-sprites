@@ -40,8 +40,16 @@ export function App() {
     key: number
     particles: ConfettiParticle[]
   } | null>(null)
+  const [scrolled, setScrolled] = useState(false)
 
   console.log(celebration)
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 4)
+    handleScroll()
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const owned = useCollectionStore((s) => s.owned)
   const toggleOwned = useCollectionStore((s) => s.toggleOwned)
@@ -106,7 +114,12 @@ export function App() {
 
   return (
     <div className="mx-auto min-h-svh max-w-5xl pb-[calc(env(safe-area-inset-bottom)+2rem)]">
-      <div className="sticky top-0 z-10 bg-background/95 px-4 pt-[calc(env(safe-area-inset-top)+0.75rem)] pb-3 backdrop-blur-sm">
+      <div
+        className={cn(
+          "sticky top-0 z-10 border-b bg-background/95 px-4 pt-[calc(env(safe-area-inset-top)+0.75rem)] pb-3 backdrop-blur-sm transition-[box-shadow,border-color] duration-200",
+          scrolled ? "border-border shadow-sm" : "border-transparent"
+        )}
+      >
         <header className="mb-3 flex items-center justify-between gap-3">
           <h1 className="font-heading text-lg font-semibold">Sprites</h1>
           <Button
