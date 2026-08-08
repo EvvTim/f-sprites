@@ -481,7 +481,7 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Duck_Gem_L.webp",
     "dropChance": "0.1%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 45,
@@ -492,7 +492,7 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Gem_ui_L.webp",
     "dropChance": "0.37%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 46,
@@ -514,7 +514,7 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_RedDemon_Gem_L.webp",
     "dropChance": "0.1%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 48,
@@ -767,7 +767,7 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Drifter_Gem_ui_L.webp",
     "dropChance": "0.08%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 71,
@@ -833,7 +833,7 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Gem_ui_L.webp",
     "dropChance": "0.37%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 77,
@@ -899,7 +899,7 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Gem_ui_L.webp",
     "dropChance": "0.00001%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 84,
@@ -966,17 +966,6 @@
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Sleepy_Cube_ui_L.webp",
     "dropChance": "0.04%",
     "unreleased": false
-  },
-  {
-    "id": 104,
-    "slug": "104-gem-punk-sprite",
-    "name": "Gem Punk",
-    "parent": "Punk",
-    "rarity": "special",
-    "variant": "gem",
-    "image": "/sprites/T_Icon_BR_Creature_Sprite_Punk_Gem_ui_L.webp",
-    "dropChance": "0%",
-    "unreleased": true
   },
   {
     "id": 106,
@@ -1053,7 +1042,7 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_GrimReaper_Gem_L.webp",
     "dropChance": "0.00099%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 129,
@@ -1185,7 +1174,7 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_PedicureAntacid_L.webp",
     "dropChance": "2.14%",
-    "unreleased": true
+    "unreleased": false
   },
   {
     "id": 151,

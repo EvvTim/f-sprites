@@ -2,17 +2,22 @@
 """Refresh src/data/sprites.json and src/assets/sprites/*.webp from fortnite.gg.
 
 fortnite.gg/sprites sits behind a Cloudflare JS challenge, so it can't be
-curled directly. Instead this pulls the latest Wayback Machine snapshot of
-the page (archive.org is not Cloudflare-gated) and parses the sprite cards
-out of it. The sprite icon images themselves are NOT behind Cloudflare and
-are downloaded straight from fortnite.gg.
+curled directly. Instead this fetches the page through the r.jina.ai reader
+proxy (https://r.jina.ai/<url>), which renders the page server-side and is
+not Cloudflare-gated, and parses the sprite cards out of the resulting HTML.
+The sprite icon images themselves are NOT behind Cloudflare and are
+downloaded straight from fortnite.gg.
+
+(This used to go through Wayback Machine snapshots, but archive.org's
+crawler can lag the live site by days or more, so newly added/released
+sprites wouldn't show up until archive.org happened to recrawl the page.)
 
 Usage:
     python3 scripts/update-sprites.py
 
 All network calls go through `curl` (not Python's urllib) since this
-environment's Python SSL trust store can't validate fortnite.gg/archive.org
-certs directly.
+environment's Python SSL trust store can't validate these hosts' certs
+directly.
 """
 
 import html
@@ -27,6 +32,8 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "src" / "data" / "sprites.json"
 IMAGES_DIR = ROOT / "src" / "assets" / "sprites"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+SPRITES_URL = "https://fortnite.gg/sprites"
+READER_URL = "https://r.jina.ai/" + SPRITES_URL
 
 CARD_RE = re.compile(r'<div class="sprite-card"([^>]*)>(.*?)</div></div>', re.DOTALL)
 ATTR_RE = re.compile(r'([\w-]+)="([^"]*)"')
@@ -55,20 +62,12 @@ def curl_to_file(url: str, dest: Path) -> None:
     run(["curl", "-s", "-A", USER_AGENT, "-L", url, "-o", str(dest)])
 
 
-def latest_snapshot_url() -> str:
-    raw = curl(
-        "http://archive.org/wayback/available?url=fortnite.gg/sprites"
-    )
-    data = json.loads(raw)
-    snapshot = data.get("archived_snapshots", {}).get("closest")
-    if not snapshot or not snapshot.get("available"):
-        print("No Wayback snapshot available for fortnite.gg/sprites", file=sys.stderr)
-        sys.exit(1)
-    print(f"Using snapshot: {snapshot['timestamp']} -> {snapshot['url']}")
-    return snapshot["url"]
+def fetch_live_html() -> str:
+    print(f"Fetching live page via reader proxy: {READER_URL}")
+    return curl(READER_URL, "-H", "X-Return-Format: html")
 
 
-def parse_snapshot(html_text: str) -> list[dict]:
+def parse_page(html_text: str) -> list[dict]:
     start = html_text.find("sprites-grid")
     end = html_text.find('id="ad-btf"')
     section = html_text[start:end] if start != -1 else html_text
@@ -165,18 +164,17 @@ def diff_and_report(old: list[dict], new: list[dict]) -> None:
 
 
 def main() -> None:
-    snapshot_url = latest_snapshot_url()
-    snapshot_html = curl(snapshot_url)
-    if len(snapshot_html) < 5000:
-        print("Snapshot response looks too small, aborting.", file=sys.stderr)
+    live_html = fetch_live_html()
+    if len(live_html) < 5000:
+        print("Page response looks too small, aborting.", file=sys.stderr)
         sys.exit(1)
 
-    sprites = parse_snapshot(snapshot_html)
+    sprites = parse_page(live_html)
     if not sprites:
         print("Parsed 0 sprites, site markup may have changed.", file=sys.stderr)
         sys.exit(1)
 
-    print(f"Parsed {len(sprites)} sprite cards from snapshot.")
+    print(f"Parsed {len(sprites)} sprite cards from live page.")
 
     print("\nDownloading any new images...")
     downloaded = download_missing_images(sprites)
