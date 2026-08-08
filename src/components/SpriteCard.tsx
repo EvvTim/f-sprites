@@ -1,10 +1,11 @@
 import { CheckIcon } from "lucide-react"
 
 import {
-  RARITY_COLORS,
   VARIANT_LABELS,
   getSpriteImage,
   spriteBackgroundStyle,
+  spriteCardStyle,
+  toneBadgeStyle,
 } from "@/data/sprites"
 import type { Sprite } from "@/data/types"
 import { haptics } from "@/lib/haptics"
@@ -20,11 +21,10 @@ export function SpriteCard({ sprite, owned, onOpen }: SpriteCardProps) {
   return (
     <li
       className={cn(
-        "group relative flex flex-col overflow-hidden rounded-xl border transition-all",
-        owned
-          ? "border-emerald-500/40 bg-emerald-500/[0.07] shadow-[0_0_0_1px] shadow-emerald-500/30 dark:bg-emerald-500/10"
-          : "border-border bg-card active:border-foreground/25"
+        "group relative flex flex-col overflow-hidden rounded-xl border-2 bg-card transition-all",
+        !owned && "active:border-foreground/25"
       )}
+      style={spriteCardStyle(sprite, owned)}
     >
       <button
         type="button"
@@ -54,10 +54,8 @@ export function SpriteCard({ sprite, owned, onOpen }: SpriteCardProps) {
             {sprite.name}
           </p>
           <span
-            className={cn(
-              "mt-1 inline-block rounded-full px-1.5 py-0.5 text-[10px] leading-none font-medium",
-              RARITY_COLORS[sprite.rarity]
-            )}
+            className="mt-1 inline-block rounded-full px-1.5 py-0.5 text-[10px] leading-none font-medium"
+            style={toneBadgeStyle(sprite.rarity)}
           >
             {VARIANT_LABELS[sprite.variant]}
           </span>

@@ -60,32 +60,14 @@ export const RARITY_LABELS: Record<Rarity, string> = {
   special: "Special",
 }
 
-export const RARITY_COLORS: Record<Rarity, string> = {
-  rare: "bg-blue-500/15 text-blue-600 dark:text-blue-400",
-  epic: "bg-violet-500/15 text-violet-600 dark:text-violet-400",
-  legendary: "bg-orange-500/15 text-orange-600 dark:text-orange-400",
-  mythic: "bg-amber-500/15 text-amber-600 dark:text-amber-400",
-  special: "bg-fuchsia-500/15 text-fuchsia-600 dark:text-fuchsia-400",
-}
-
-export const VARIANT_COLORS: Record<Variant, string> = {
-  base: "bg-muted text-muted-foreground",
-  gold: "bg-yellow-500/15 text-yellow-600 dark:text-yellow-400",
-  candy: "bg-pink-500/15 text-pink-600 dark:text-pink-400",
-  galaxy: "bg-indigo-500/15 text-indigo-600 dark:text-indigo-400",
-  gem: "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400",
-  holofoil: "bg-cyan-500/15 text-cyan-600 dark:text-cyan-400",
-  cube: "bg-slate-500/15 text-slate-600 dark:text-slate-400",
-  quack: "bg-lime-500/15 text-lime-600 dark:text-lime-400",
-}
-
 export function sortByVariant(a: Sprite, b: Sprite) {
   return VARIANT_ORDER.indexOf(a.variant) - VARIANT_ORDER.indexOf(b.variant)
 }
 
 // Matches the accent colors fortnite.gg itself uses per rarity/variant, so
-// each sprite's card glow feels "in tone" with how the game presents it.
-const SPRITE_TONE: Record<Rarity | Variant, { top: string; border: string }> = {
+// every tinted surface in the app (card glow, borders, badges) is exactly
+// "in tone" with how the game presents it, not an approximated Tailwind hue.
+export const SPRITE_TONE: Record<Rarity | Variant, { top: string; border: string }> = {
   rare: { top: "#104273", border: "#00afff" },
   epic: { top: "#4d1566", border: "#ce59ff" },
   legendary: { top: "#743e0a", border: "#de6e0e" },
@@ -111,4 +93,36 @@ export function spriteBackgroundStyle(sprite: Sprite): CSSProperties {
     backgroundImage: `radial-gradient(circle at 50% 30%, ${top}66 0%, ${top}26 55%, transparent 80%)`,
     boxShadow: `inset 0 -2px 0 0 ${border}55`,
   }
+}
+
+/** Card border: always tinted to the sprite's tone; owned cards get a
+ * fully-saturated border + glow, unowned ones stay faded so "owned" reads
+ * from the border strength rather than from a separate (tone-unrelated)
+ * color, and the checkmark badge stays the sole "success" signal. */
+export function spriteCardStyle(sprite: Sprite, owned: boolean): CSSProperties {
+  const { border } = getSpriteTone(sprite)
+  return {
+    borderColor: owned ? border : `${border}30`,
+    boxShadow: owned
+      ? `0 0 0 1px ${border}55, 0 6px 16px -8px ${border}80`
+      : undefined,
+  }
+}
+
+// The game's accent colors are tuned for a dark UI; several (mythic, gem)
+// are too pale for readable text on a light card. Darken for text use only
+// so badges stay legible in both themes without branching on color scheme.
+function darkenForText(hex: string): string {
+  const n = parseInt(hex.slice(1), 16)
+  const r = Math.round(((n >> 16) & 255) * 0.7)
+  const g = Math.round(((n >> 8) & 255) * 0.7)
+  const b = Math.round((n & 255) * 0.7)
+  return `rgb(${r}, ${g}, ${b})`
+}
+
+/** Badge style for a rarity or variant pill, using the exact game accent
+ * color as text over a matching low-alpha tint background. */
+export function toneBadgeStyle(key: Rarity | Variant): CSSProperties {
+  const { border } = SPRITE_TONE[key]
+  return { backgroundColor: `${border}26`, color: darkenForText(border) }
 }

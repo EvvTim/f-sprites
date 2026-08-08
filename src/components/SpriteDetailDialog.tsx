@@ -8,14 +8,13 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet"
 import {
-  RARITY_COLORS,
   RARITY_LABELS,
-  VARIANT_COLORS,
   VARIANT_LABELS,
   getSpriteImage,
   sortByVariant,
   spriteBackgroundStyle,
   sprites,
+  toneBadgeStyle,
 } from "@/data/sprites"
 import type { Sprite } from "@/data/types"
 import { haptics } from "@/lib/haptics"
@@ -72,18 +71,22 @@ export function SpriteDetailDialog({
 
               <ul className="flex flex-wrap items-center justify-center gap-1.5">
                 <li
-                  className={cn(
-                    "rounded-full px-2 py-0.5 text-xs font-medium",
-                    RARITY_COLORS[sprite.rarity]
-                  )}
+                  className="rounded-full px-2 py-0.5 text-xs font-medium"
+                  style={toneBadgeStyle(sprite.rarity)}
                 >
                   {RARITY_LABELS[sprite.rarity]}
                 </li>
                 <li
                   className={cn(
                     "rounded-full px-2 py-0.5 text-xs font-medium",
-                    VARIANT_COLORS[sprite.variant]
+                    sprite.variant === "base" &&
+                      "bg-muted text-muted-foreground"
                   )}
+                  style={
+                    sprite.variant === "base"
+                      ? undefined
+                      : toneBadgeStyle(sprite.variant)
+                  }
                 >
                   {VARIANT_LABELS[sprite.variant]}
                 </li>
