@@ -2,7 +2,7 @@
 """Refresh src/data/sprites.json and src/assets/sprites/*.webp from fortnite.gg.
 
 fortnite.gg/sprites sits behind a Cloudflare JS challenge, so it can't be
-curled directly. Instead this fetches the page through the r.jina.ai reader
+curled directly. Instead this fetches pages through the r.jina.ai reader
 proxy (https://r.jina.ai/<url>), which renders the page server-side and is
 not Cloudflare-gated, and parses the sprite cards out of the resulting HTML.
 The sprite icon images themselves are NOT behind Cloudflare and are
@@ -11,6 +11,15 @@ downloaded straight from fortnite.gg.
 (This used to go through Wayback Machine snapshots, but archive.org's
 crawler can lag the live site by days or more, so newly added/released
 sprites wouldn't show up until archive.org happened to recrawl the page.)
+
+Besides the sprite-grid listing, this also visits each sprite's own detail
+page (fortnite.gg/sprites/<slug>) to pull its ability description, squad
+buff, location/summon-cost facts, and per-source drop chances. That's one
+extra proxied request per sprite, and the reader proxy is rate-limited to
+~20 requests/minute, so detail fetching is incremental: a sprite is only
+re-fetched if it doesn't already have detail fields cached in sprites.json.
+On a full backfill (nothing cached yet) this makes the script take several
+minutes for ~100+ sprites - that's expected, not a hang.
 
 Usage:
     python3 scripts/update-sprites.py
@@ -26,6 +35,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -34,6 +44,9 @@ IMAGES_DIR = ROOT / "src" / "assets" / "sprites"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 SPRITES_URL = "https://fortnite.gg/sprites"
 READER_URL = "https://r.jina.ai/" + SPRITES_URL
+# r.jina.ai allows ~20 requests/minute; stay comfortably under that.
+DETAIL_FETCH_DELAY_S = 3.2
+DETAIL_FETCH_RETRIES = 2
 
 CARD_RE = re.compile(r'<div class="sprite-card"([^>]*)>(.*?)</div></div>', re.DOTALL)
 ATTR_RE = re.compile(r'([\w-]+)="([^"]*)"')
@@ -44,6 +57,12 @@ IMG_RE = re.compile(
 NAME_RE = re.compile(r'class="sprite-name"[^>]*>([^<]*)</a>')
 RARITY_PILL_RE = re.compile(r'sprite-pill sprite-rarity-(\w+)">(\w+)</span>')
 PCT_RE = re.compile(r'sprite-pill">([\d.]+%)</span>')
+
+DETAIL_PANEL_RE = re.compile(r'class="sprite-detail-panel">(.*)', re.DOTALL)
+DESC_SPECIAL_RE = re.compile(r'class="sprite-desc-special">([^<]*)<')
+DESC_RE = re.compile(r'class="sprite-desc">([^<]*)<')
+FACT_RE = re.compile(r'class="sprite-fact"><span>([^<]*)</span>\s*<b>([^<]*)</b>')
+DETAIL_FIELDS = ("squadBonus", "effect", "facts", "dropChances")
 
 
 def run(cmd: list[str]) -> str:
@@ -65,6 +84,91 @@ def curl_to_file(url: str, dest: Path) -> None:
 def fetch_live_html() -> str:
     print(f"Fetching live page via reader proxy: {READER_URL}")
     return curl(READER_URL, "-H", "X-Return-Format: html")
+
+
+def fetch_sprite_detail_html(slug: str) -> str:
+    url = f"{SPRITES_URL}/{slug}"
+    return curl("https://r.jina.ai/" + url, "-H", "X-Return-Format: html")
+
+
+def parse_sprite_detail(html_text: str) -> dict | None:
+    panel_match = DETAIL_PANEL_RE.search(html_text)
+    if not panel_match:
+        return None
+    # Bound the panel so a regex mishap can't run off into unrelated markup
+    # (related-variants grid, footer, scripts) further down the page.
+    panel = panel_match.group(1)[:4000]
+
+    squad_match = DESC_SPECIAL_RE.search(panel)
+    squad_bonus = html.unescape(squad_match.group(1)).strip() if squad_match else None
+
+    effect = [html.unescape(p).strip() for p in DESC_RE.findall(panel)]
+
+    facts_html, _, drop_html = panel.partition('class="sprite-facts-subtitle"')
+    facts = [
+        {"label": html.unescape(label).strip(), "value": html.unescape(value).strip()}
+        for label, value in FACT_RE.findall(facts_html)
+        if label.strip() != "Variant"  # redundant with the sprite's own variant field
+    ]
+    drop_chances = [
+        {"label": html.unescape(label).strip(), "value": html.unescape(value).strip()}
+        for label, value in FACT_RE.findall(drop_html)
+    ]
+
+    if not effect and not facts:
+        return None
+
+    return {
+        "squadBonus": squad_bonus,
+        "effect": effect,
+        "facts": facts,
+        "dropChances": drop_chances,
+    }
+
+
+def has_details(cached: dict) -> bool:
+    # squadBonus is legitimately null/absent for every non-"special" sprite,
+    # so it can't be part of the "already fetched" check (that would make
+    # every run re-fetch the ~90% of sprites without a squad buff). A
+    # successful parse always yields a non-empty effect and/or facts list -
+    # see the early-return guard in parse_sprite_detail - so checking those
+    # two is the reliable "did we already get this one" signal.
+    return bool(cached.get("effect")) or bool(cached.get("facts"))
+
+
+def fetch_missing_details(sprites: list[dict], old_by_id: dict[int, dict]) -> int:
+    fetched = 0
+    pending = [s for s in sprites if not has_details(old_by_id.get(s["id"], {}))]
+    if not pending:
+        return 0
+
+    print(
+        f"\nFetching detail info for {len(pending)} sprite(s) "
+        f"(~{len(pending) * DETAIL_FETCH_DELAY_S:.0f}s, rate-limited)..."
+    )
+    for i, sprite in enumerate(pending):
+        if i > 0:
+            time.sleep(DETAIL_FETCH_DELAY_S)
+
+        detail = None
+        for attempt in range(DETAIL_FETCH_RETRIES + 1):
+            if attempt > 0:
+                # Back off harder than the steady-state pace: a failure here
+                # usually means the shared rate limit was momentarily blown
+                # (e.g. another update-sprites run going at the same time).
+                time.sleep(DETAIL_FETCH_DELAY_S * 3)
+            detail = parse_sprite_detail(fetch_sprite_detail_html(sprite["slug"]))
+            if detail is not None:
+                break
+
+        if detail is None:
+            print(f"  [{i + 1}/{len(pending)}] FAILED to parse {sprite['slug']}", file=sys.stderr)
+            continue
+        sprite.update(detail)
+        fetched += 1
+        print(f"  [{i + 1}/{len(pending)}] {sprite['name']}")
+
+    return fetched
 
 
 def parse_page(html_text: str) -> list[dict]:
@@ -183,6 +287,18 @@ def main() -> None:
     old_sprites = []
     if DATA_PATH.exists():
         old_sprites = json.loads(DATA_PATH.read_text(encoding="utf-8"))
+    old_by_id = {d["id"]: d for d in old_sprites}
+
+    # Carry over already-scraped detail info so re-runs only fetch what's new.
+    for sprite in sprites:
+        cached = old_by_id.get(sprite["id"])
+        if cached:
+            for field in DETAIL_FIELDS:
+                if cached.get(field):
+                    sprite[field] = cached[field]
+
+    fetched = fetch_missing_details(sprites, old_by_id)
+    print(f"\nFetched detail info for {fetched} sprite(s).")
 
     clean_sprites = [{k: v for k, v in d.items() if not k.startswith("_")} for d in sprites]
     diff_and_report(old_sprites, clean_sprites)

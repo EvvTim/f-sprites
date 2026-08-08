@@ -8,7 +8,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Unvault_Ch7S3_ui_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Replenish shields while standing in water!",
+      "Increases in power at each Level Up: 2 Shield -> 3 Shield -> 4 Shield -> 5 Shield -> 6 Shield per tick"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near rivers and beaches"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "100"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 2,
@@ -19,7 +39,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Candy_ui_L.webp",
     "dropChance": "0.53%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Replenish shields while standing in water!",
+      "Increases in power at each Level Up: 2 Shield -> 3 Shield -> 4 Shield -> 5 Shield -> 6 Shield per tick"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near rivers and beaches"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.53%"
+      }
+    ]
   },
   {
     "id": 3,
@@ -30,7 +71,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Galaxy_ui_L.webp",
     "dropChance": "0.43%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Replenish shields while standing in water!",
+      "Increases in power at each Level Up: 2 Shield -> 3 Shield -> 4 Shield -> 5 Shield -> 6 Shield per tick"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near rivers and beaches"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.43%"
+      }
+    ]
   },
   {
     "id": 4,
@@ -41,7 +103,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Gold_ui_L.webp",
     "dropChance": "0.53%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Replenish shields while standing in water!",
+      "Increases in power at each Level Up: 2 Shield -> 3 Shield -> 4 Shield -> 5 Shield -> 6 Shield per tick"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near rivers and beaches"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.53%"
+      }
+    ]
   },
   {
     "id": 5,
@@ -52,7 +135,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Ch7S3_UI_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "You have a chance to find additional rare items when opening chests.",
+      "Chance increases at each Level Up: 10% -> 12.5% -> 15% -> 17.5% -> 20% chance to find additional rare loot"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found wandering around forests and wooded regions"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "100"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 6,
@@ -63,7 +166,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Candy_ui_L.webp",
     "dropChance": "0.53%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "You have a chance to find additional rare items when opening chests.",
+      "Chance increases at each Level Up: 10% -> 12.5% -> 15% -> 17.5% -> 20% chance to find additional rare loot"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found wandering around forests and wooded regions"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.53%"
+      }
+    ]
   },
   {
     "id": 7,
@@ -74,7 +198,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Galaxy_ui_L.webp",
     "dropChance": "0.43%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "You have a chance to find additional rare items when opening chests.",
+      "Chance increases at each Level Up: 10% -> 12.5% -> 15% -> 17.5% -> 20% chance to find additional rare loot"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found wandering around forests and wooded regions"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.43%"
+      }
+    ]
   },
   {
     "id": 8,
@@ -85,7 +230,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Gold_ui_L.webp",
     "dropChance": "0.53%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "You have a chance to find additional rare items when opening chests.",
+      "Chance increases at each Level Up: 10% -> 12.5% -> 15% -> 17.5% -> 20% chance to find additional rare loot"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found wandering around forests and wooded regions"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.53%"
+      }
+    ]
   },
   {
     "id": 9,
@@ -96,7 +262,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fire_Unvault_Ch7S3_ui_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Creates a fiery burst when you deal enough damage to an enemy!",
+      "Required damage decreases at each Level Up: 150 Damage -> 125 Damage -> 100 Damage -> 75 Damage -> 50 Damage to trigger"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Located near urban areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "100"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 10,
@@ -107,7 +293,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fire_Candy_ui_L.webp",
     "dropChance": "0.53%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Creates a fiery burst when you deal enough damage to an enemy!",
+      "Required damage decreases at each Level Up: 150 Damage -> 125 Damage -> 100 Damage -> 75 Damage -> 50 Damage to trigger"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Located near urban areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.53%"
+      }
+    ]
   },
   {
     "id": 11,
@@ -118,7 +325,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fire_Galaxy_ui_L.webp",
     "dropChance": "0.43%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Creates a fiery burst when you deal enough damage to an enemy!",
+      "Required damage decreases at each Level Up: 150 Damage -> 125 Damage -> 100 Damage -> 75 Damage -> 50 Damage to trigger"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Located near urban areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.43%"
+      }
+    ]
   },
   {
     "id": 12,
@@ -129,7 +357,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fire_Gold_ui_L.webp",
     "dropChance": "0.53%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Creates a fiery burst when you deal enough damage to an enemy!",
+      "Required damage decreases at each Level Up: 150 Damage -> 125 Damage -> 100 Damage -> 75 Damage -> 50 Damage to trigger"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Located near urban areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.53%"
+      }
+    ]
   },
   {
     "id": 13,
@@ -140,7 +389,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Duck_Default_L.webp",
     "dropChance": "6.48%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Emoting or Jamming replenishes shields.",
+      "Increases in power at each Level Up: 2 Shield -> 3 Shield -> 4 Shield -> 6 Shield -> 8 Shield per tick"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in the vault of a certain business mogul"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "6.48%"
+      }
+    ]
   },
   {
     "id": 14,
@@ -151,7 +420,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Duck_Candy_L.webp",
     "dropChance": "0.37%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Emoting or Jamming replenishes shields.",
+      "Increases in power at each Level Up: 2 Shield -> 3 Shield -> 4 Shield -> 6 Shield -> 8 Shield per tick"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in the vault of a certain business mogul"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.37%"
+      }
+    ]
   },
   {
     "id": 15,
@@ -162,7 +452,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Duck_Galaxy_L.webp",
     "dropChance": "0.25%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Emoting or Jamming replenishes shields.",
+      "Increases in power at each Level Up: 2 Shield -> 3 Shield -> 4 Shield -> 6 Shield -> 8 Shield per tick"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in the vault of a certain business mogul"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.25%"
+      }
+    ]
   },
   {
     "id": 16,
@@ -173,7 +484,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Duck_Gold_L.webp",
     "dropChance": "0.62%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Emoting or Jamming replenishes shields.",
+      "Increases in power at each Level Up: 2 Shield -> 3 Shield -> 4 Shield -> 6 Shield -> 8 Shield per tick"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in the vault of a certain business mogul"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.62%"
+      }
+    ]
   },
   {
     "id": 17,
@@ -184,7 +516,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Ghost_Unvault_L.webp",
     "dropChance": "5.25%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Grants cloak for a duration upon reloading.",
+      "Increases in duration at each Level Up: 3 Seconds -> 3.5 Seconds -> 4 Seconds -> 4.5 Seconds -> 5 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in the world at nighttime"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "5.25%"
+      }
+    ]
   },
   {
     "id": 18,
@@ -195,7 +547,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Ghost_Candy_L.webp",
     "dropChance": "0.37%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Grants cloak for a duration upon reloading.",
+      "Increases in duration at each Level Up: 3 Seconds -> 3.5 Seconds -> 4 Seconds -> 4.5 Seconds -> 5 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in the world at nighttime"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.37%"
+      }
+    ]
   },
   {
     "id": 19,
@@ -206,7 +579,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Ghost_Galaxy_L.webp",
     "dropChance": "0.25%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Grants cloak for a duration upon reloading.",
+      "Increases in duration at each Level Up: 3 Seconds -> 3.5 Seconds -> 4 Seconds -> 4.5 Seconds -> 5 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in the world at nighttime"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.25%"
+      }
+    ]
   },
   {
     "id": 20,
@@ -217,7 +611,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Ghost_Gold_L.webp",
     "dropChance": "0.62%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Grants cloak for a duration upon reloading.",
+      "Increases in duration at each Level Up: 3 Seconds -> 3.5 Seconds -> 4 Seconds -> 4.5 Seconds -> 5 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in the world at nighttime"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.62%"
+      }
+    ]
   },
   {
     "id": 21,
@@ -228,7 +643,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Sleepy_ui_L.webp",
     "dropChance": "4.45%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Grants a random item at each level, exploding with legendary loot at Max Level.",
+      "Loot value increases at each Level Up!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Sometimes found sleeping in the storage crates"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,500"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "4.45%"
+      }
+    ]
   },
   {
     "id": 22,
@@ -239,7 +674,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Sleepy_Candy_ui_L.webp",
     "dropChance": "0.26%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Grants a random item at each level, exploding with legendary loot at Max Level.",
+      "Loot value increases at each Level Up!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Sometimes found sleeping in the storage crates"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.26%"
+      }
+    ]
   },
   {
     "id": 23,
@@ -250,7 +706,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Sleepy_Galaxy_ui_L.webp",
     "dropChance": "0.17%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Grants a random item at each level, exploding with legendary loot at Max Level.",
+      "Loot value increases at each Level Up!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Sometimes found sleeping in the storage crates"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.17%"
+      }
+    ]
   },
   {
     "id": 24,
@@ -261,7 +738,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Sleepy_Gold_ui_L.webp",
     "dropChance": "0.43%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Grants a random item at each level, exploding with legendary loot at Max Level.",
+      "Loot value increases at each Level Up!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Sometimes found sleeping in the storage crates"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.43%"
+      }
+    ]
   },
   {
     "id": 25,
@@ -272,7 +770,26 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Punk_ui_L.webp",
     "dropChance": "4.45%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Possibly nothing... or infinitely something"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,500"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "4.45%"
+      }
+    ]
   },
   {
     "id": 26,
@@ -283,7 +800,27 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Punk_Candy_ui_L.webp",
     "dropChance": "0.26%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Possibly nothing... or infinitely something"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.26%"
+      }
+    ]
   },
   {
     "id": 27,
@@ -294,7 +831,27 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Punk_Galaxy_ui_L.webp",
     "dropChance": "0.17%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Possibly nothing... or infinitely something"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.17%"
+      }
+    ]
   },
   {
     "id": 28,
@@ -305,7 +862,27 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Punk_Gold_ui_L.webp",
     "dropChance": "0.43%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Possibly nothing... or infinitely something"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.43%"
+      }
+    ]
   },
   {
     "id": 29,
@@ -316,7 +893,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_King_ui_L.webp",
     "dropChance": "5.25%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Your Pickaxe deals more damage.",
+      "Increases in damage at each Level Up: 30 -> 40 -> 60 -> 80 -> 120 bonus damage"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "5.25%"
+      }
+    ]
   },
   {
     "id": 30,
@@ -327,7 +924,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_King_Candy_ui_L.webp",
     "dropChance": "0.37%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Your Pickaxe deals more damage.",
+      "Increases in damage at each Level Up: 30 -> 40 -> 60 -> 80 -> 120 bonus damage"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.37%"
+      }
+    ]
   },
   {
     "id": 31,
@@ -338,7 +956,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_King_Galaxy_ui_L.webp",
     "dropChance": "0.25%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Your Pickaxe deals more damage.",
+      "Increases in damage at each Level Up: 30 -> 40 -> 60 -> 80 -> 120 bonus damage"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.25%"
+      }
+    ]
   },
   {
     "id": 32,
@@ -349,7 +988,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_King_Gold_ui_L.webp",
     "dropChance": "0.62%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Your Pickaxe deals more damage.",
+      "Increases in damage at each Level Up: 30 -> 40 -> 60 -> 80 -> 120 bonus damage"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.62%"
+      }
+    ]
   },
   {
     "id": 33,
@@ -360,7 +1020,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_ui_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Spawn a Shield Bubble Jr. when you use a healing item on yourself (excluding splashes and grenades).",
+      "Increases in duration at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 34,
@@ -371,7 +1051,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Candy_ui_L.webp",
     "dropChance": "0.000085%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Spawn a Shield Bubble Jr. when you use a healing item on yourself (excluding splashes and grenades).",
+      "Increases in duration at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.000085%"
+      }
+    ]
   },
   {
     "id": 35,
@@ -382,7 +1083,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Galaxy_ui_L.webp",
     "dropChance": "0.000056%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Spawn a Shield Bubble Jr. when you use a healing item on yourself (excluding splashes and grenades).",
+      "Increases in duration at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.000056%"
+      }
+    ]
   },
   {
     "id": 36,
@@ -393,7 +1115,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Gold_ui_L.webp",
     "dropChance": "0.00014%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Spawn a Shield Bubble Jr. when you use a healing item on yourself (excluding splashes and grenades).",
+      "Increases in duration at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.00014%"
+      }
+    ]
   },
   {
     "id": 37,
@@ -404,7 +1147,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_RedDemon_Default_L.webp",
     "dropChance": "6.48%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Siphon some health and shields when you eliminate an opponent.",
+      "Increases in power at each Level Up: 10 Healing -> 15 Healing -> 20 Healing -> 25 Healing -> 30 Healing per elimination"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "6.48%"
+      }
+    ]
   },
   {
     "id": 38,
@@ -415,7 +1178,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_RedDemon_Candy_L.webp",
     "dropChance": "0.37%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Siphon some health and shields when you eliminate an opponent.",
+      "Increases in power at each Level Up: 10 Healing -> 15 Healing -> 20 Healing -> 25 Healing -> 30 Healing per elimination"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.37%"
+      }
+    ]
   },
   {
     "id": 39,
@@ -426,7 +1210,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_RedDemon_Galaxy_L.webp",
     "dropChance": "0.25%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Siphon some health and shields when you eliminate an opponent.",
+      "Increases in power at each Level Up: 10 Healing -> 15 Healing -> 20 Healing -> 25 Healing -> 30 Healing per elimination"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.25%"
+      }
+    ]
   },
   {
     "id": 40,
@@ -437,7 +1242,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_RedDemon_Gold_L.webp",
     "dropChance": "0.62%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Siphon some health and shields when you eliminate an opponent.",
+      "Increases in power at each Level Up: 10 Healing -> 15 Healing -> 20 Healing -> 25 Healing -> 30 Healing per elimination"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.62%"
+      }
+    ]
   },
   {
     "id": 41,
@@ -448,7 +1274,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_BurntPeanut_ui_L.webp",
     "dropChance": "2.14%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Goop! When eliminating players, you may find more loot. Sometimes mythic!",
+      "Chance increases at each Level Up: 20% -> 30% -> 40% -> 50% -> 60% chance to find more loot. 10% chance to find Mythic at Max Level!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in Relic Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "2.14%"
+      }
+    ]
   },
   {
     "id": 42,
@@ -459,7 +1305,29 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Air_Gold_L.webp",
     "dropChance": "0.53%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Increases sprinting speed and jump height.",
+      "Also nullifies fall damage.",
+      "Jump height increased with each Level Up!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.53%"
+      }
+    ]
   },
   {
     "id": 43,
@@ -470,7 +1338,28 @@
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Holofoil_ui_L.webp",
     "dropChance": "0.53%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "5% chance for your squad to find rare Sprite Variants from looting chests",
+    "effect": [
+      "Replenish shields while standing in water!",
+      "Increases in power at each Level Up: 2 Shield -> 3 Shield -> 4 Shield -> 5 Shield -> 6 Shield per tick"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near rivers and beaches"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.53%"
+      }
+    ]
   },
   {
     "id": 44,
@@ -481,7 +1370,28 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Duck_Gem_L.webp",
     "dropChance": "0.1%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Take 30% less Fall damage",
+    "effect": [
+      "Emoting or Jamming replenishes shields.",
+      "Increases in power at each Level Up: 2 Shield -> 3 Shield -> 4 Shield -> 6 Shield -> 8 Shield per tick"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in the vault of a certain business mogul"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.1%"
+      }
+    ]
   },
   {
     "id": 45,
@@ -492,7 +1402,28 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Gem_ui_L.webp",
     "dropChance": "0.37%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Take 30% less Fall damage",
+    "effect": [
+      "You have a chance to find additional rare items when opening chests.",
+      "Chance increases at each Level Up: 10% -> 12.5% -> 15% -> 17.5% -> 20% chance to find additional rare loot"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found wandering around forests and wooded regions"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.37%"
+      }
+    ]
   },
   {
     "id": 46,
@@ -503,7 +1434,28 @@
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fire_Holofoil_ui_L.webp",
     "dropChance": "0.53%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "5% chance for your squad to find rare Sprite Variants from looting chests",
+    "effect": [
+      "Creates a fiery burst when you deal enough damage to an enemy!",
+      "Required damage decreases at each Level Up: 150 Damage -> 125 Damage -> 100 Damage -> 75 Damage -> 50 Damage to trigger"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Located near urban areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.53%"
+      }
+    ]
   },
   {
     "id": 47,
@@ -514,7 +1466,28 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_RedDemon_Gem_L.webp",
     "dropChance": "0.1%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Take 30% less Fall damage",
+    "effect": [
+      "Siphon some health and shields when you eliminate an opponent.",
+      "Increases in power at each Level Up: 10 Healing -> 15 Healing -> 20 Healing -> 25 Healing -> 30 Healing per elimination"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.1%"
+      }
+    ]
   },
   {
     "id": 48,
@@ -525,7 +1498,28 @@
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Ghost_Holo_L.webp",
     "dropChance": "1.23%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "5% chance for your squad to find rare Sprite Variants from looting chests",
+    "effect": [
+      "Grants cloak for a duration upon reloading.",
+      "Increases in duration at each Level Up: 3 Seconds -> 3.5 Seconds -> 4 Seconds -> 4.5 Seconds -> 5 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in the world at nighttime"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "1.23%"
+      }
+    ]
   },
   {
     "id": 49,
@@ -536,7 +1530,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Boss_ui_L.webp",
     "dropChance": "4.45%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Grants an increase to your max HP and Shield.",
+      "Increases at each Level Up: 5 HP/Shield -> 10 HP/Shield -> 15 HP/Shield -> 20 HP/Shield -> 25 HP/Shield"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Claimed from defeating a powerful adversary"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,500"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "4.45%"
+      }
+    ]
   },
   {
     "id": 50,
@@ -547,7 +1561,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Boss_Gold_ui_L.webp",
     "dropChance": "0.43%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Grants an increase to your max HP and Shield.",
+      "Increases at each Level Up: 5 HP/Shield -> 10 HP/Shield -> 15 HP/Shield -> 20 HP/Shield -> 25 HP/Shield"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Claimed from defeating a powerful adversary"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.43%"
+      }
+    ]
   },
   {
     "id": 51,
@@ -558,7 +1593,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Boss_Candy_ui_L.webp",
     "dropChance": "0.26%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Grants an increase to your max HP and Shield.",
+      "Increases at each Level Up: 5 HP/Shield -> 10 HP/Shield -> 15 HP/Shield -> 20 HP/Shield -> 25 HP/Shield"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Claimed from defeating a powerful adversary"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.26%"
+      }
+    ]
   },
   {
     "id": 52,
@@ -569,7 +1625,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Boss_Galaxy_ui_L.webp",
     "dropChance": "0.17%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Grants an increase to your max HP and Shield.",
+      "Increases at each Level Up: 5 HP/Shield -> 10 HP/Shield -> 15 HP/Shield -> 20 HP/Shield -> 25 HP/Shield"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Claimed from defeating a powerful adversary"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.17%"
+      }
+    ]
   },
   {
     "id": 53,
@@ -580,7 +1657,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Seven_ui_L.webp",
     "dropChance": "3.63%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Enemy player foot trails are visible in the world for your Squad.",
+      "Duration increases at each Level Up: 10 Seconds -> 15 Seconds -> 20 Seconds -> 25 Seconds -> 30 Second foot trails"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,500"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "3.63%"
+      }
+    ]
   },
   {
     "id": 54,
@@ -591,7 +1688,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Seven_Candy_ui_L.webp",
     "dropChance": "0.26%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Enemy player foot trails are visible in the world for your Squad.",
+      "Duration increases at each Level Up: 10 Seconds -> 15 Seconds -> 20 Seconds -> 25 Seconds -> 30 Second foot trails"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.26%"
+      }
+    ]
   },
   {
     "id": 55,
@@ -602,7 +1720,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Seven_Galaxy_ui_L.webp",
     "dropChance": "0.17%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Enemy player foot trails are visible in the world for your Squad.",
+      "Duration increases at each Level Up: 10 Seconds -> 15 Seconds -> 20 Seconds -> 25 Seconds -> 30 Second foot trails"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.17%"
+      }
+    ]
   },
   {
     "id": 56,
@@ -613,7 +1752,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Seven_Gold_ui_L.webp",
     "dropChance": "0.43%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Enemy player foot trails are visible in the world for your Squad.",
+      "Duration increases at each Level Up: 10 Seconds -> 15 Seconds -> 20 Seconds -> 25 Seconds -> 30 Second foot trails"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.43%"
+      }
+    ]
   },
   {
     "id": 57,
@@ -624,7 +1784,28 @@
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Seven_Holofoil_ui_L.webp",
     "dropChance": "0.85%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "5% chance for your squad to find rare Sprite Variants from looting chests",
+    "effect": [
+      "Enemy player foot trails are visible in the world for your Squad.",
+      "Duration increases at each Level Up: 10 Seconds -> 15 Seconds -> 20 Seconds -> 25 Seconds -> 30 Second foot trails"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.85%"
+      }
+    ]
   },
   {
     "id": 58,
@@ -635,7 +1816,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fishy_ui_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Swim speed greatly increased. Taking damage also briefly increases movement speed.",
+      "Increases in power at each Level Up: 25% Swim Speed / 10% Movement Speed -> 50% Swim Speed / 20% Movement Speed -> 100% Swim Speed / 30% Movement Speed -> 150% Swim Speed / 40% Movement Speed -> 200% Swim Speed / 50% Movement Speed Bonuses"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "1,800"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 59,
@@ -646,7 +1847,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fishy_Candy_ui_L.webp",
     "dropChance": "0.53%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Swim speed greatly increased. Taking damage also briefly increases movement speed.",
+      "Increases in power at each Level Up: 25% Swim Speed / 10% Movement Speed -> 50% Swim Speed / 20% Movement Speed -> 100% Swim Speed / 30% Movement Speed -> 150% Swim Speed / 40% Movement Speed -> 200% Swim Speed / 50% Movement Speed Bonuses"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.53%"
+      }
+    ]
   },
   {
     "id": 60,
@@ -657,7 +1879,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fishy_Galaxy_ui_L.webp",
     "dropChance": "0.43%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Swim speed greatly increased. Taking damage also briefly increases movement speed.",
+      "Increases in power at each Level Up: 25% Swim Speed / 10% Movement Speed -> 50% Swim Speed / 20% Movement Speed -> 100% Swim Speed / 30% Movement Speed -> 150% Swim Speed / 40% Movement Speed -> 200% Swim Speed / 50% Movement Speed Bonuses"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.43%"
+      }
+    ]
   },
   {
     "id": 61,
@@ -668,7 +1911,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fishy_Gold_ui_L.webp",
     "dropChance": "0.64%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Swim speed greatly increased. Taking damage also briefly increases movement speed.",
+      "Increases in power at each Level Up: 25% Swim Speed / 10% Movement Speed -> 50% Swim Speed / 20% Movement Speed -> 100% Swim Speed / 30% Movement Speed -> 150% Swim Speed / 40% Movement Speed -> 200% Swim Speed / 50% Movement Speed Bonuses"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.64%"
+      }
+    ]
   },
   {
     "id": 62,
@@ -679,7 +1943,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Soccer_ui_L.webp",
     "dropChance": "5.25%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Gain the Overdrive effect when you Mantle, Hurdle, or Wall Scramble.",
+      "Duration increases at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds of Overdrive"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "5.25%"
+      }
+    ]
   },
   {
     "id": 63,
@@ -690,7 +1974,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Soccer_Candy_L.webp",
     "dropChance": "0.37%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Gain the Overdrive effect when you Mantle, Hurdle, or Wall Scramble.",
+      "Duration increases at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds of Overdrive"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.37%"
+      }
+    ]
   },
   {
     "id": 64,
@@ -701,7 +2006,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Soccer_Galaxy_L.webp",
     "dropChance": "0.25%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Gain the Overdrive effect when you Mantle, Hurdle, or Wall Scramble.",
+      "Duration increases at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds of Overdrive"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.25%"
+      }
+    ]
   },
   {
     "id": 65,
@@ -712,7 +2038,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Soccer_Gold_L.webp",
     "dropChance": "0.62%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Gain the Overdrive effect when you Mantle, Hurdle, or Wall Scramble.",
+      "Duration increases at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds of Overdrive"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.62%"
+      }
+    ]
   },
   {
     "id": 66,
@@ -723,7 +2070,28 @@
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Soccer_Holofoil_L.webp",
     "dropChance": "1.23%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "5% chance for your squad to find rare Sprite Variants from looting chests",
+    "effect": [
+      "Gain the Overdrive effect when you Mantle, Hurdle, or Wall Scramble.",
+      "Duration increases at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds of Overdrive"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "1.23%"
+      }
+    ]
   },
   {
     "id": 67,
@@ -734,7 +2102,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Drifter_ui_L.webp",
     "dropChance": "6.48%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Gain a Shock Rock charge when you deal enough damage to enemies!",
+      "Required damage decreases at each Level Up: 175 Damage -> 150 Damage -> 125 Damage -> 100 Damage -> 75 Damage to trigger"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "6.48%"
+      }
+    ]
   },
   {
     "id": 68,
@@ -745,7 +2133,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Drifter_Candy_ui_L.webp",
     "dropChance": "0.37%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Gain a Shock Rock charge when you deal enough damage to enemies!",
+      "Required damage decreases at each Level Up: 175 Damage -> 150 Damage -> 125 Damage -> 100 Damage -> 75 Damage to trigger"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.37%"
+      }
+    ]
   },
   {
     "id": 69,
@@ -756,7 +2165,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Drifter_Galaxy_ui_L.webp",
     "dropChance": "0.25%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Gain a Shock Rock charge when you deal enough damage to enemies!",
+      "Required damage decreases at each Level Up: 175 Damage -> 150 Damage -> 125 Damage -> 100 Damage -> 75 Damage to trigger"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.25%"
+      }
+    ]
   },
   {
     "id": 70,
@@ -767,7 +2197,28 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Drifter_Gem_ui_L.webp",
     "dropChance": "0.08%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Take 30% less Fall damage",
+    "effect": [
+      "Gain a Shock Rock charge when you deal enough damage to enemies!",
+      "Required damage decreases at each Level Up: 175 Damage -> 150 Damage -> 125 Damage -> 100 Damage -> 75 Damage to trigger"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.08%"
+      }
+    ]
   },
   {
     "id": 71,
@@ -778,7 +2229,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Drifter_Gold_ui_L.webp",
     "dropChance": "0.62%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Gain a Shock Rock charge when you deal enough damage to enemies!",
+      "Required damage decreases at each Level Up: 175 Damage -> 150 Damage -> 125 Damage -> 100 Damage -> 75 Damage to trigger"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.62%"
+      }
+    ]
   },
   {
     "id": 72,
@@ -789,7 +2261,29 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Air_Candy_L.webp",
     "dropChance": "0.53%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Increases sprinting speed and jump height.",
+      "Also nullifies fall damage.",
+      "Jump height increased with each Level Up!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.53%"
+      }
+    ]
   },
   {
     "id": 73,
@@ -800,7 +2294,28 @@
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_King_Holofoil_ui_L.webp",
     "dropChance": "1.23%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "5% chance for your squad to find rare Sprite Variants from looting chests",
+    "effect": [
+      "Your Pickaxe deals more damage.",
+      "Increases in damage at each Level Up: 30 -> 40 -> 60 -> 80 -> 120 bonus damage"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "1.23%"
+      }
+    ]
   },
   {
     "id": 74,
@@ -811,7 +2326,28 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Air_Default_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Increases sprinting speed and jump height.",
+      "Also nullifies fall damage.",
+      "Jump height increased with each Level Up!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "1,800"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 75,
@@ -822,7 +2358,29 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Air_Galaxy_L.webp",
     "dropChance": "0.43%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Increases sprinting speed and jump height.",
+      "Also nullifies fall damage.",
+      "Jump height increased with each Level Up!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.43%"
+      }
+    ]
   },
   {
     "id": 76,
@@ -833,7 +2391,28 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Gem_ui_L.webp",
     "dropChance": "0.37%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Take 30% less Fall damage",
+    "effect": [
+      "Replenish shields while standing in water!",
+      "Increases in power at each Level Up: 2 Shield -> 3 Shield -> 4 Shield -> 5 Shield -> 6 Shield per tick"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near rivers and beaches"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.37%"
+      }
+    ]
   },
   {
     "id": 77,
@@ -844,7 +2423,29 @@
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Air_Holo_L.webp",
     "dropChance": "0.53%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "5% chance for your squad to find rare Sprite Variants from looting chests",
+    "effect": [
+      "Increases sprinting speed and jump height.",
+      "Also nullifies fall damage.",
+      "Jump height increased with each Level Up!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.53%"
+      }
+    ]
   },
   {
     "id": 78,
@@ -855,7 +2456,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_GrimReaper_Default_L.webp",
     "dropChance": "0.15%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Players who attack you are marked for a duration.",
+      "Increases in duration at each Level Up: 3 Seconds -> 3.5 Seconds -> 4 Seconds -> 4.5 Seconds -> 5 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.15%"
+      }
+    ]
   },
   {
     "id": 79,
@@ -866,7 +2487,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_GrimReaper_Candy_L.webp",
     "dropChance": "0.01%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Players who attack you are marked for a duration.",
+      "Increases in duration at each Level Up: 3 Seconds -> 3.5 Seconds -> 4 Seconds -> 4.5 Seconds -> 5 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.01%"
+      }
+    ]
   },
   {
     "id": 80,
@@ -877,7 +2519,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_GrimReaper_Galaxy_L.webp",
     "dropChance": "0.01%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Players who attack you are marked for a duration.",
+      "Increases in duration at each Level Up: 3 Seconds -> 3.5 Seconds -> 4 Seconds -> 4.5 Seconds -> 5 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.01%"
+      }
+    ]
   },
   {
     "id": 81,
@@ -888,7 +2551,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_GrimReaper_Gold_L.webp",
     "dropChance": "0.01%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Players who attack you are marked for a duration.",
+      "Increases in duration at each Level Up: 3 Seconds -> 3.5 Seconds -> 4 Seconds -> 4.5 Seconds -> 5 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.01%"
+      }
+    ]
   },
   {
     "id": 82,
@@ -899,7 +2583,28 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Gem_ui_L.webp",
     "dropChance": "0.00001%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Take 30% less Fall damage",
+    "effect": [
+      "Spawn a Shield Bubble Jr. when you use a healing item on yourself (excluding splashes and grenades).",
+      "Increases in duration at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.00001%"
+      }
+    ]
   },
   {
     "id": 84,
@@ -910,7 +2615,27 @@
     "variant": "quack",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Water_Quack_ui_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Replenish shields while standing in water!",
+      "Increases in power at each Level Up: 2 Shield -> 3 Shield -> 4 Shield -> 5 Shield -> 6 Shield per tick"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near rivers and beaches"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 86,
@@ -921,7 +2646,27 @@
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Cube_ui_L.webp",
     "dropChance": "0.21%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "You have a chance to find additional rare items when opening chests.",
+      "Chance increases at each Level Up: 10% -> 12.5% -> 15% -> 17.5% -> 20% chance to find additional rare loot"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found wandering around forests and wooded regions"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.21%"
+      }
+    ]
   },
   {
     "id": 87,
@@ -932,7 +2677,27 @@
     "variant": "quack",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Earth_Quack_ui_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "You have a chance to find additional rare items when opening chests.",
+      "Chance increases at each Level Up: 10% -> 12.5% -> 15% -> 17.5% -> 20% chance to find additional rare loot"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found wandering around forests and wooded regions"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 89,
@@ -943,7 +2708,27 @@
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fire_Cube_ui_L.webp",
     "dropChance": "0.21%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Creates a fiery burst when you deal enough damage to an enemy!",
+      "Required damage decreases at each Level Up: 150 Damage -> 125 Damage -> 100 Damage -> 75 Damage -> 50 Damage to trigger"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Located near urban areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.21%"
+      }
+    ]
   },
   {
     "id": 90,
@@ -954,7 +2739,27 @@
     "variant": "quack",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fire_Quack_ui_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Creates a fiery burst when you deal enough damage to an enemy!",
+      "Required damage decreases at each Level Up: 150 Damage -> 125 Damage -> 100 Damage -> 75 Damage -> 50 Damage to trigger"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Located near urban areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 99,
@@ -965,7 +2770,27 @@
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Sleepy_Cube_ui_L.webp",
     "dropChance": "0.04%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Grants a random item at each level, exploding with legendary loot at Max Level.",
+      "Loot value increases at each Level Up!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Sometimes found sleeping in the storage crates"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.04%"
+      }
+    ]
   },
   {
     "id": 106,
@@ -976,7 +2801,26 @@
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Punk_Cube_ui_L.webp",
     "dropChance": "0.04%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Possibly nothing... or infinitely something"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.04%"
+      }
+    ]
   },
   {
     "id": 111,
@@ -987,7 +2831,28 @@
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Holofoil_ui_L.webp",
     "dropChance": "0.00028%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "5% chance for your squad to find rare Sprite Variants from looting chests",
+    "effect": [
+      "Spawn a Shield Bubble Jr. when you use a healing item on yourself (excluding splashes and grenades).",
+      "Increases in duration at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.00028%"
+      }
+    ]
   },
   {
     "id": 112,
@@ -998,7 +2863,27 @@
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Cube_ui_L.webp",
     "dropChance": "0.000014%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Spawn a Shield Bubble Jr. when you use a healing item on yourself (excluding splashes and grenades).",
+      "Increases in duration at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.000014%"
+      }
+    ]
   },
   {
     "id": 113,
@@ -1009,7 +2894,27 @@
     "variant": "quack",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_ZeroPoint_Quack_ui_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Spawn a Shield Bubble Jr. when you use a healing item on yourself (excluding splashes and grenades).",
+      "Increases in duration at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 116,
@@ -1020,7 +2925,27 @@
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Fishy_Cube_L.webp",
     "dropChance": "0.21%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Swim speed greatly increased. Taking damage also briefly increases movement speed.",
+      "Increases in power at each Level Up: 25% Swim Speed / 10% Movement Speed -> 50% Swim Speed / 20% Movement Speed -> 100% Swim Speed / 30% Movement Speed -> 150% Swim Speed / 40% Movement Speed -> 200% Swim Speed / 50% Movement Speed Bonuses"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "2,700"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.21%"
+      }
+    ]
   },
   {
     "id": 126,
@@ -1031,7 +2956,27 @@
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Boss_Cube_ui_L.webp",
     "dropChance": "0.04%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Grants an increase to your max HP and Shield.",
+      "Increases at each Level Up: 5 HP/Shield -> 10 HP/Shield -> 15 HP/Shield -> 20 HP/Shield -> 25 HP/Shield"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Claimed from defeating a powerful adversary"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.04%"
+      }
+    ]
   },
   {
     "id": 128,
@@ -1042,7 +2987,28 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_GrimReaper_Gem_L.webp",
     "dropChance": "0.00099%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Take 30% less Fall damage",
+    "effect": [
+      "Players who attack you are marked for a duration.",
+      "Increases in duration at each Level Up: 3 Seconds -> 3.5 Seconds -> 4 Seconds -> 4.5 Seconds -> 5 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.00099%"
+      }
+    ]
   },
   {
     "id": 129,
@@ -1053,7 +3019,28 @@
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_GrimReaper_Holofoil_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "5% chance for your squad to find rare Sprite Variants from looting chests",
+    "effect": [
+      "Players who attack you are marked for a duration.",
+      "Increases in duration at each Level Up: 3 Seconds -> 3.5 Seconds -> 4 Seconds -> 4.5 Seconds -> 5 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 130,
@@ -1064,7 +3051,27 @@
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_GrimReaper_Cube_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Players who attack you are marked for a duration.",
+      "Increases in duration at each Level Up: 3 Seconds -> 3.5 Seconds -> 4 Seconds -> 4.5 Seconds -> 5 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 138,
@@ -1075,7 +3082,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_Reload_FillerGrunt_icon_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Knocking players reveals others nearby.",
+      "Mark duration increases at each Level Up: 3 Seconds -> 3.5 Seconds -> 4 Seconds -> 4.5 Seconds -> 5 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 139,
@@ -1086,7 +3113,26 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_FossilMeal_Default_L.webp",
     "dropChance": "1.44%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Grants the ability to launch in the air and deploy the Bat Cape!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "1.44%"
+      }
+    ]
   },
   {
     "id": 140,
@@ -1097,7 +3143,27 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_FossilMeal_Gold_L.webp",
     "dropChance": "0.17%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Grants the ability to launch in the air and deploy the Bat Cape!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.17%"
+      }
+    ]
   },
   {
     "id": 141,
@@ -1108,7 +3174,27 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_FossilMeal_Candy_L.webp",
     "dropChance": "0.1%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Grants the ability to launch in the air and deploy the Bat Cape!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.1%"
+      }
+    ]
   },
   {
     "id": 142,
@@ -1119,7 +3205,27 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_FossilMeal_Galaxy_L.webp",
     "dropChance": "0.07%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Grants the ability to launch in the air and deploy the Bat Cape!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.07%"
+      }
+    ]
   },
   {
     "id": 145,
@@ -1130,7 +3236,27 @@
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_FossilMeal_Holofoil_L.webp",
     "dropChance": "0.34%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "5% chance for your squad to find rare Sprite Variants from looting chests",
+    "effect": [
+      "Grants the ability to launch in the air and deploy the Bat Cape!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.34%"
+      }
+    ]
   },
   {
     "id": 146,
@@ -1141,7 +3267,26 @@
     "variant": "cube",
     "image": "/sprites/T_Icon_BR_FossilMeal_Cube_L.webp",
     "dropChance": "0.02%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Grants the ability to launch in the air and deploy the Bat Cape!"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found rarely in Sprite Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "10,000"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.02%"
+      }
+    ]
   },
   {
     "id": 148,
@@ -1152,7 +3297,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_CompanyStargazer_Default_L.webp",
     "dropChance": "2.14%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Upon earning an elimination, slowly replenish shield for you and nearby squad members for a duration.",
+      "Duration increases at each Level Up: 6 Seconds -> 7 Seconds -> 8 Seconds -> 9 Seconds -> 10 Seconds"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": ""
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "2.14%"
+      }
+    ]
   },
   {
     "id": 149,
@@ -1163,7 +3328,28 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_CokeParmesan_Default_L.webp",
     "dropChance": "2.14%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Sprinting for a short time makes your slide destructive.",
+      "Slidekicking enemies increases rate of fire and reload speed.",
+      "Increases in power at each Level Up: 40 dmg / 10% fire rate -> 45 dmg / 20% fire rate -> 50 dmg / 30% fire rate -> 55 dmg / 40% fire rate -> 60 dmg / 50% fire rate"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in Relic Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "2.14%"
+      }
+    ]
   },
   {
     "id": 150,
@@ -1174,7 +3360,28 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_PedicureAntacid_L.webp",
     "dropChance": "2.14%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Regenerate health over time when low.",
+      "While regenerating, gain Cloak and low gravity!",
+      "Health regenerated to increases at each Level Up: 60 Health -> 70 Health -> 80 Health -> 90 Health -> 100 Health"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in Relic Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "2.14%"
+      }
+    ]
   },
   {
     "id": 151,
@@ -1185,7 +3392,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Llama_ui_L.webp",
     "dropChance": "4.45%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Opening ammo boxes has a chance to grant a weapon upgrade.",
+      "Chance increases at each Level Up: 5% -> 10% -> 15% -> 17% -> 20%"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in Relic Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,500"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "4.45%"
+      }
+    ]
   },
   {
     "id": 152,
@@ -1196,7 +3423,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Llama_Gold_ui_L.webp",
     "dropChance": "0.43%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Opening ammo boxes has a chance to grant a weapon upgrade.",
+      "Chance increases at each Level Up: 5% -> 10% -> 15% -> 17% -> 20%"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in Relic Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.43%"
+      }
+    ]
   },
   {
     "id": 153,
@@ -1207,7 +3455,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Llama_Candy_ui_L.webp",
     "dropChance": "0.26%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Opening ammo boxes has a chance to grant a weapon upgrade.",
+      "Chance increases at each Level Up: 5% -> 10% -> 15% -> 17% -> 20%"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in Relic Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.26%"
+      }
+    ]
   },
   {
     "id": 154,
@@ -1218,7 +3487,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Llama_Galaxy_ui_L.webp",
     "dropChance": "0.17%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Opening ammo boxes has a chance to grant a weapon upgrade.",
+      "Chance increases at each Level Up: 5% -> 10% -> 15% -> 17% -> 20%"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in Relic Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.17%"
+      }
+    ]
   },
   {
     "id": 155,
@@ -1229,7 +3519,28 @@
     "variant": "gem",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Llama_Gem_ui_L.webp",
     "dropChance": "0%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Take 30% less Fall damage",
+    "effect": [
+      "Opening ammo boxes has a chance to grant a weapon upgrade.",
+      "Chance increases at each Level Up: 5% -> 10% -> 15% -> 17% -> 20%"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Found in Relic Chests"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0%"
+      }
+    ]
   },
   {
     "id": 156,
@@ -1240,7 +3551,27 @@
     "variant": "base",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Peely_ui_L.webp",
     "dropChance": "4.62%",
-    "unreleased": false
+    "unreleased": false,
+    "effect": [
+      "Emits a ping for players with rare sprites nearby, but marks you on the map.",
+      "Ping radius increases at each Level Up: 40m -> 50m -> 60m -> 70m -> 80m"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "4,500"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "4.62%"
+      }
+    ]
   },
   {
     "id": 157,
@@ -1251,7 +3582,28 @@
     "variant": "gold",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Peely_Gold_ui_L.webp",
     "dropChance": "0.43%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 3x bonus XP from eliminations",
+    "effect": [
+      "Emits a ping for players with rare sprites nearby, but marks you on the map.",
+      "Ping radius increases at each Level Up: 40m -> 50m -> 60m -> 70m -> 80m"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.43%"
+      }
+    ]
   },
   {
     "id": 158,
@@ -1262,7 +3614,28 @@
     "variant": "candy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Peely_Candy_ui_L.webp",
     "dropChance": "0.26%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 20% more Sprite Dust upon Extraction",
+    "effect": [
+      "Emits a ping for players with rare sprites nearby, but marks you on the map.",
+      "Ping radius increases at each Level Up: 40m -> 50m -> 60m -> 70m -> 80m"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.26%"
+      }
+    ]
   },
   {
     "id": 159,
@@ -1273,7 +3646,28 @@
     "variant": "galaxy",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Peely_Galaxy_ui_L.webp",
     "dropChance": "0.17%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "Gain 30% more Ammo whenever picked up in the world",
+    "effect": [
+      "Emits a ping for players with rare sprites nearby, but marks you on the map.",
+      "Ping radius increases at each Level Up: 40m -> 50m -> 60m -> 70m -> 80m"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.17%"
+      }
+    ]
   },
   {
     "id": 160,
@@ -1284,6 +3678,27 @@
     "variant": "holofoil",
     "image": "/sprites/T_Icon_BR_Creature_Sprite_Peely_Holofoil_ui_L.webp",
     "dropChance": "0.85%",
-    "unreleased": false
+    "unreleased": false,
+    "squadBonus": "5% chance for your squad to find rare Sprite Variants from looting chests",
+    "effect": [
+      "Emits a ping for players with rare sprites nearby, but marks you on the map.",
+      "Ping radius increases at each Level Up: 40m -> 50m -> 60m -> 70m -> 80m"
+    ],
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Spotted near high and mountainous areas"
+      },
+      {
+        "label": "Summon Cost",
+        "value": "6,750"
+      }
+    ],
+    "dropChances": [
+      {
+        "label": "Sprite Chest",
+        "value": "0.85%"
+      }
+    ]
   }
 ]

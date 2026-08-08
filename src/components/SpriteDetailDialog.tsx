@@ -97,9 +97,20 @@ export function SpriteDetailDialog({
                 )}
               </ul>
 
-              <p className="text-sm text-muted-foreground">
-                Drop chance: {sprite.dropChance}
-              </p>
+              {sprite.squadBonus && (
+                <p
+                  className="w-full rounded-lg px-3 py-2 text-center text-xs font-medium"
+                  style={toneBadgeStyle(sprite.rarity)}
+                >
+                  {sprite.squadBonus}
+                </p>
+              )}
+
+              {!sprite.dropChances?.length && (
+                <p className="text-sm text-muted-foreground">
+                  Drop chance: {sprite.dropChance}
+                </p>
+              )}
 
               <Button
                 className={cn(
@@ -117,6 +128,51 @@ export function SpriteDetailDialog({
                   "Mark as owned"
                 )}
               </Button>
+
+              {!!sprite.effect?.length && (
+                <div className="w-full space-y-1.5 text-sm text-muted-foreground">
+                  {sprite.effect.map((line, i) => (
+                    <p key={i}>{line}</p>
+                  ))}
+                </div>
+              )}
+
+              {!!sprite.facts?.length && (
+                <ul className="w-full divide-y divide-border rounded-lg border text-sm">
+                  {sprite.facts.map((fact) => (
+                    <li
+                      key={fact.label}
+                      className="flex items-center justify-between gap-3 px-3 py-2"
+                    >
+                      <span className="text-muted-foreground">
+                        {fact.label}
+                      </span>
+                      <span className="font-medium">{fact.value}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {!!sprite.dropChances?.length && (
+                <div className="w-full">
+                  <p className="mb-1.5 text-xs font-medium text-muted-foreground">
+                    Drop Chances
+                  </p>
+                  <ul className="divide-y divide-border rounded-lg border text-sm">
+                    {sprite.dropChances.map((d) => (
+                      <li
+                        key={d.label}
+                        className="flex items-center justify-between gap-3 px-3 py-2"
+                      >
+                        <span className="text-muted-foreground">
+                          {d.label}
+                        </span>
+                        <span className="font-medium">{d.value}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
 
             {siblings.length > 1 && (
